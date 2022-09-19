@@ -1,0 +1,11 @@
+body{
+    font-family: 'Montserrat', 'ans-serif';
+}
+header {
+    background: #00008B;
+}
+.menu {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
