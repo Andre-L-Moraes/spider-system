@@ -1,11 +1,37 @@
-body{
-    font-family: 'Montserrat', 'ans-serif';
+body {
+	font-family: 'Montserrat', sans-serif;;
 }
-header {
+header{
     background: #00008B;
+    padding: 100px 0;
 }
 .menu {
 	position: relative;
 	width: 940px;
 	margin: 0 auto;
 }
+.nomeTitulo{
+    color: red;
+    font-weight: bold;
+    position: absolute;
+    font-size: 24px;
+}
+nav {
+	position: absolute;
+	right: 0;
+}
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;
+}   
