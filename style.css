@@ -3,7 +3,7 @@ body {
 }
 header{
     background: #00008B;
-    padding: 100px 0;
+    padding: 50px 0;
 }
 .menu {
 	position: relative;
@@ -11,13 +11,13 @@ header{
 	margin: 0 auto;
 }
 .nomeTitulo{
-    color: red;
+    color: #e91616;
     font-weight: bold;
     position: absolute;
-    font-size: 24px;
+    font-size: 34px;
 }
 nav {
-	position: absolute;
+	position: absolute; 
 	right: 0;
 }
 nav li {
@@ -26,12 +26,44 @@ nav li {
 }
 nav a {
 	text-transform: uppercase;
-	color: #000000;
+	color: #BBBBBB;
 	font-weight: bold;
-	font-size: 22px;
+	font-size: 18px;
 	text-decoration: none;
 }
 nav a:hover {
-	color: #C78C19;
+	color: #e91616;
 	text-decoration: underline;
+}  
+main{
+    background: linear-gradient(#00008B,#BBBBBB);
+}
+.titulo-principal {
+    text-align: center;
+    font-size: 25px;
+    color: #BBBBBB;
+    margin: 10px 0 1em; 
+    padding: 1am 0;
+}
+.principal {
+    width: 940px;
+	margin: 0 auto; 
+    padding: 40px;
+}
+.principal p {
+    margin: 10px 0 1em;
+}
+.Missao{
+    font-style: italic;
+}
+.Missao strong{
+    font-weight: bold;
+} 
+
+
+footer{
+    text-align: center;
+    color: #BBBBBB;
+    background: url("Imagens/vermelho-abstrato.jpg");
+    padding: 40px;
 }   
