@@ -2,7 +2,7 @@ body {
 	font-family: 'Montserrat', sans-serif;;
 }
 header{
-    background: #00008B;
+    background: #0F7BA6;
     padding: 50px 0;
 }
 .menu {
@@ -11,7 +11,7 @@ header{
 	margin: 0 auto;
 }
 .nomeTitulo{
-    color: #e91616;
+    color: #A62B1F;
     font-weight: bold;
     position: absolute;
     font-size: 34px;
@@ -26,22 +26,22 @@ nav li {
 }
 nav a {
 	text-transform: uppercase;
-	color: #BBBBBB;
+	color: #91AAB4;
 	font-weight: bold;
 	font-size: 18px;
 	text-decoration: none;
 }
 nav a:hover {
-	color: #e91616;
+	color: #A62B1F;
 	text-decoration: underline;
 }  
 main{
-    background: linear-gradient(#00008B,#BBBBBB);
+    background: linear-gradient(#0F7BA6,#91AAB4);
 }
 .titulo-principal {
     text-align: center;
     font-size: 25px;
-    color: #BBBBBB;
+    color: #91AAB4;
     margin: 10px 0 1em; 
     padding: 1am 0;
 }
@@ -63,7 +63,7 @@ main{
 
 footer{
     text-align: center;
-    color: #BBBBBB;
+    color: #91AAB4;
     background: url("Imagens/vermelho-abstrato.jpg");
     padding: 40px;
 }   
