@@ -1,0 +1,7 @@
+.barbearia__titulo {
+    font-family: 'Kaushan Script', cursive;
+    text-align: center; /* texto alinhado */
+    font-size: 25px; /* tamanho do fonte */
+    color: #E9ECF2; /* cor da fonte */
+    padding: 1rem; /* espaçamento */
+}

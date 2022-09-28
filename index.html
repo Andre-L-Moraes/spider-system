@@ -4,36 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste Spider System</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <title>Spider System</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/informações.css">
+    <link rel="stylesheet" href="./css/barbearia index/barbearia-sub.css">
+    <link rel="stylesheet" href="./css/barbearia index/barbearia-descricao.css">
+    <link rel="stylesheet" href="./css/barbearia index/barbearia-imagem.css">
+    <link rel="stylesheet" href="./css/barbearia index/barbearia-titulo.css">
+    <link rel="stylesheet" href="./css/cabecalho.css">
+    <link rel="stylesheet" href="./css/logo.css">
+    <link rel="stylesheet" href="./css/menu/menu.css">
+    <link rel="stylesheet" href="./css/menu/menu-lista.css">
+    <link rel="stylesheet" href="./css/menu/menu-item.css">
+    <link rel="stylesheet" href="./css/menu/menu-link.css">
+    <link rel="stylesheet" href="./css/sobre.css">
+    <link rel="stylesheet" href="./css/titulo/titulo.css">
+    <link rel="stylesheet" href="./css/titulo/titulo-descricao.css">
+    <link rel="stylesheet" href="./css/titulo/missao.css">
+    <link rel="stylesheet" href="./css/rodape.css">
+
 </head>
 <body>
-    <header>
-        <div class="menu" > 
-            <div class="nomeTitulo"> 
-                <h1>SPIDER SYSTEM</h1>  
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="barbearia.html">Sistema Barbearia</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+    <header class="cabecalho">
+        <img class="logo" src="./Imagens/Spider System Transp.png" alt="Spider System">
+            <nav class="menu">
+                <ul class="menu__lista">
+                    <li class="menu__item"><a class="menu__link ativo" href="index.html">Home</a></li>
+                    <li class="menu__item"><a class="menu__link" href="barbearia.html">Sistema Barbearia</a></li>
+                    <li class="menu__item"><a class="menu__link" href="contato.html">Contato</a></li>
                 </ul>
             </nav>
-        </div>
     </header>
-    <main>
-        <section class="principal">
-        <h1 class="titulo-principal">SISTEMAS CRIADOS E PRONTOS PARA UTILIZAR</h1>
+    <main class="informacoes">
+        <section class="sobre">
+            <div class="titulo__principal">
+                <h1 class="titulo">SISTEMAS PARA PEQUENAS E MEDIAS EMPRESAS</h1>
+            
+                <P class="titulo__descricao">Temos e desemvolvemos sistemas para varios tipos de negocios.</P>
+            
+                <p class="missao"><em>Nossa principal missão é: <strong>"Fornecer o melhor sistema com eficiencia, eficacia como o nosso cliente precisa."</strong></em></p>
+            </div>
+            <div class="sub__barbearia">
+                <h2 class="barbearia__titulo">SISTEMAS PARA BARBEARIA</h2>
 
-        <p> Temos um sistema de barbearia pronto para ser utilizado nas melhores Barbearias do Brasil.</p>
+                <img src="./Imagens/utensilios.jpg" alt="utensilios de barbearia" class="barbearia__img">
 
-        <p class="Missao"><em>Nossa principal missão é: <strong>"Fornecer o melhor sistema com eficiencia e eficacia para os barbeiros garantindo qualidade e satisfação dos nossos clientes".</strong></em></p>
+                <p class="barbearia__descricao">Temos um sistema para a sua barbearia pronto para ser utilizado com facilidade e eficiencia.</p>
+            </div>
         </section>
     </main>
-    <footer>
+    <footer class="rodape">
         <p class="copyright">&copy; Spider System - 2022</p>
     </footer>
     <script src="app.js"></script>

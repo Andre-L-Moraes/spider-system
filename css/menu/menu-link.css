@@ -1,0 +1,16 @@
+.menu__link {
+	color: #7c0404; /* cor da font */
+	margin-right: 1.25rem; /* margem entre os links */
+	text-decoration: none; /* tira o subrinhado do link */
+	text-transform: lowercase; /* todas as letras minusculas */
+}
+
+.menu__link.ativo{
+    color: #140783; /* cor do menu ativo */
+    font-weight: bold; /* fonte em negrito */
+}
+
+.menu__link:hover {
+	color: #140783; /* cor quando o mause seleciona */
+	text-decoration: underline; /* coloca o subrinhado no link */
+} 

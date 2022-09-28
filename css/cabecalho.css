@@ -1,0 +1,8 @@
+.cabecalho {
+    align-items: center; /*centraliza a lista */
+    background: #d0d0ff;
+    display: flex;
+    justify-content: space-between; /* deixa o menu no canto direito */
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
