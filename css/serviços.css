@@ -1,0 +1,6 @@
+.serviços {
+    background: #0F7BA6;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

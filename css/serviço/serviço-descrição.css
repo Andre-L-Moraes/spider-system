@@ -1,0 +1,6 @@
+.serviço__descrição {
+    font-size: 1.1875rem; /* tamanho da font */
+    line-height: 1.5;
+    text-align: justify; /* alinhamento do texto justificado*/
+    margin: 0 0 1rem;
+}
