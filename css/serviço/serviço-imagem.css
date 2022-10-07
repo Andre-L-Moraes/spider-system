@@ -1,4 +1,15 @@
-.serviço__img {
-    height: 150px; /* altura */
-    width: 300px;
+.serviço__imagem {
+    background-position: center; /* centralizar a imagem */
+    background-repeat: no-repeat; /* não repetir as imagens dentro da caixa de imagem */
+    background-size: cover; /* preencher toda a caixa de imagem com a imagem */
+    margin: 0 auto; /* auto para centralizar a imagem */
+    height: 179px; /* altura */
+}
+
+.imagem__serviço--site {
+    background-image: url('../../Imagens/imagem\ de\ criação\ de\ site.png');
+}
+
+.imagem__serviço--sistema {
+    background-image: url('../../Imagens/imagem\ de\ sitema.png');
 }
