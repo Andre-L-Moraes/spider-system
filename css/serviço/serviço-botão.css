@@ -4,7 +4,7 @@
     border-radius: 5px; /*borda aredondada do botao*/
     color: #fdfdfd; /* cor da letra do botao */
     padding: 1rem; /* espaçamento interno */
-    transition: all .1s ease-in-out; /* vai mudar de cor o botão mais lento */
+    transition: all .2s ease-in-out; /* vai mudar de cor o botão mais lento */
 }
 
 .serviço__botão:hover { /* quando passar o mause em cima */

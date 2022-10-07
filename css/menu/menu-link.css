@@ -1,16 +1,28 @@
 .menu__link {
-	color: #7c0404; /* cor da font */
-	margin-right: 1.25rem; /* margem entre os links */
+	border: 1px solid #9799A6; /* cria uma borda */
+	border-radius: 5px; /* borda fica com as pontas arredondadas */
+	padding: 10px;
+	color: #FFF; /* cor da font */
+	background-color: #0F7BA6;
 	text-decoration: none; /* tira o subrinhado do link */
-	text-transform: lowercase; /* todas as letras minusculas */
+	transition: .5s; /* tempo de mudança da cor */
+	margin-left: 10px;
+
+
+	/*text-transform: lowercase; /* todas as letras minusculas */
 }
 
 .menu__link.ativo{
-    color: #140783; /* cor do menu ativo */
+    color: #FFF; /* cor do menu ativo */
     font-weight: bold; /* fonte em negrito */
+	/*background-color: #9799A6;*/
 }
 
 .menu__link:hover {
-	color: #140783; /* cor quando o mause seleciona */
-	text-decoration: underline; /* coloca o subrinhado no link */
+	color: #FFF;
+	background-color: #9799A6;
+
+
+	/*color: #140783; /* cor quando o mause seleciona */
+	/*text-decoration: underline; /* coloca o subrinhado no link */
 } 
