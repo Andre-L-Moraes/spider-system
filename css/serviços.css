@@ -3,4 +3,6 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 0 2rem;
 }
