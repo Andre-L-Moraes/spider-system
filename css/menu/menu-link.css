@@ -7,9 +7,6 @@
 	text-decoration: none; /* tira o subrinhado do link */
 	transition: .5s; /* tempo de mudança da cor */
 	margin-left: 10px;
-
-
-	/*text-transform: lowercase; /* todas as letras minusculas */
 }
 
 .menu__link.ativo{
@@ -21,8 +18,4 @@
 .menu__link:hover {
 	color: #FFF;
 	background-color: #9799A6;
-
-
-	/*color: #140783; /* cor quando o mause seleciona */
-	/*text-decoration: underline; /* coloca o subrinhado no link */
 } 

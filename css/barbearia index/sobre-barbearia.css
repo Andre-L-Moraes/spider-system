@@ -1,0 +1,5 @@
+.sobre__barbearia {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

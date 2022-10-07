@@ -1,0 +1,9 @@
+.barbearia {
+    background: #836c2e;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0 2rem;
+
+
+    /*padding-bottom: 170px;*/
+}
