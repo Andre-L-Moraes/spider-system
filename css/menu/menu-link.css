@@ -1,21 +1,27 @@
 .menu__link {
+	padding: 10px;
+	text-decoration: none;
+	color: #0F7BA6;
+}
+
+@media (min-width: 800px) {
+	.menu__link {
+	background-color: #0F7BA6;
 	border: 1px solid #9799A6; /* cria uma borda */
 	border-radius: 5px; /* borda fica com as pontas arredondadas */
-	padding: 10px;
-	color: #FFF; /* cor da font */
-	background-color: #0F7BA6;
-	text-decoration: none; /* tira o subrinhado do link */
 	transition: .5s; /* tempo de mudança da cor */
+	text-decoration: none; /* tira o subrinhado do link */
+	color: #FFF; /* cor da font */
 	margin-left: 10px;
-}
+	}
 
-.menu__link.ativo{
-    color: #FFF; /* cor do menu ativo */
-    font-weight: bold; /* fonte em negrito */
-	/*background-color: #9799A6;*/
-}
+	.menu__link.ativo{
+		color: #FFF; /* cor do menu ativo */
+		font-weight: bold; /* fonte em negrito */
+	}
 
-.menu__link:hover {
-	color: #FFF;
-	background-color: #9799A6;
-} 
+	.menu__link:hover {
+		color: #FFF;
+		background-color: #9799A6;
+	} 
+}

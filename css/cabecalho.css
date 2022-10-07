@@ -5,3 +5,12 @@
     background: #D3D3D3;
     padding: 0 2rem 0 2rem;
 }
+
+@media (max-width: 800px) {
+    .cabecalho {
+        flex-direction: column;
+        padding: 10px;
+        align-items: initial;
+        text-align: center;
+    }
+}

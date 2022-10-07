@@ -1,4 +1,9 @@
 .cabecalho__menu {
-	position: absolute; 
-	right: 0;
+	display: flex;
+}
+
+@media (max-width: 800px) {
+	.cabecalho__menu {
+		flex-direction: column;
+	}
 }

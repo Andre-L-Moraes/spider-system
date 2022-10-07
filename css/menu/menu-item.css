@@ -1,3 +1,12 @@
 .menu__item {
     font-size: 16px;
 }
+
+@media (max-width: 800px) {
+    .menu__item {
+        font-size: 16px;
+        padding: 10px;
+        border-bottom: 1px solid #9799A6;
+        margin-bottom: 10px;
+    }
+}
