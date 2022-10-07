@@ -3,3 +3,9 @@
     text-align: center; /* texto alinhado */
     width: 25%;
 }   
+
+@media (max-width: 800px) {
+    .serviço {
+        width: auto;
+    }
+}

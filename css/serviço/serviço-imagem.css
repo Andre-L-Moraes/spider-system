@@ -13,3 +13,22 @@
 .imagem__serviço--sistema {
     background-image: url('../../Imagens/imagem\ de\ sitema.png');
 }
+
+@media screen and (min-width: 0px) {
+    .serviço__imagem {
+        height: 165px; /* altura */
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .serviço__imagem {
+        height: 224px; /* altura */
+    }
+}
+
+@media screen and (min-width: 768px) {  
+    .serviço__imagem {
+        height: 179px; /* altura */
+        background-position: bottom; /* centralizar a imagem */
+    }
+}
