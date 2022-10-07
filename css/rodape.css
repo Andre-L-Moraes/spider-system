@@ -1,8 +1,10 @@
 .rodape {
-    text-align: center;
-    color: #91AAB4;
     background-image: url("../Imagens/teia.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    /*background-size: cover; */
+    background-position: center;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: bold;
     padding: 40px;
+    text-align: center;
 }   
