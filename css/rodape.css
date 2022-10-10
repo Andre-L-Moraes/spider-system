@@ -1,7 +1,7 @@
 .rodape {
     background-image: url("../Imagens/teia.jpg");
     background-repeat: no-repeat;
-    /*background-size: cover; */
+    background-size: cover;
     background-position: center;
     font-family: 'Kaushan Script', cursive;
     font-weight: bold;

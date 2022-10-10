@@ -1,4 +1,7 @@
-.barbearia__descricao {
-    /*float: left; /* coloca o texto do lado da imagem */
-    /*padding-top: 5%;*/
+
+
+@media (max-width: 800px) {
+    .barbearia__descricao {
+        padding: 1rem;
+    }
 }

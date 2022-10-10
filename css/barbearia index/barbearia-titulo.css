@@ -4,3 +4,9 @@
     font-size: 25px; /* tamanho do fonte */
     color: #E9ECF2; /* cor da fonte */
 }
+
+@media (max-width: 800px) {
+    .barbearia__titulo {
+        padding-top: 1rem;
+    }
+}
