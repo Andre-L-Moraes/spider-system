@@ -1,5 +1,6 @@
 .serviço {
     background: #1f3d49; /* cor de fundo */
+    border-radius: 10px;
     text-align: center; /* texto alinhado */
     width: 25%;
 }   
