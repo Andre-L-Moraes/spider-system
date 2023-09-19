@@ -18,6 +18,7 @@
 	.menu__link.ativo{
 		color: #FFF; /* cor do menu ativo */
 		font-weight: bold; /* fonte em negrito */
+		font-family: 'Kaushan Script', cursive;	
 	}
 
 	.menu__link:hover {

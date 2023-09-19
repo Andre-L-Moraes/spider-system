@@ -2,18 +2,20 @@
     display: block;
     border: none; /* Tira a borda do botão */
     background-color: #8d0606; /* Cor de fundo*/
-    border-radius: 7px;
-    width: 100%;
-    margin-top: 1rem; /*Margem acima*/
+    border-radius: 7px;  /*Borda arredondada */
+    width: 100%; /* Largura */
+    margin-top: 2rem; /*Margem acima*/
     max-width: 15rem; /*Largura Maxima*/
     padding: 1rem; /*Margem interna*/
     box-sizing: border-box;
     color: #E9ECF2; /*Cor font*/
     font-size: 20px; /*Tamanho da fonte*/
     align-self: center; /*Centraliza o botão no centro*/
-    text-align: center;
+    text-align: center; /*Alinhamento do texto*/
+    transition: 1s all; /* Tempo de zoom do botão*/
 }   
 .botao:hover { /* quando passar o mause em cima */
     background: #620404; /* muda a cor quando o mause estiver encima do botao */
     cursor: pointer; /* muda o cursos para uma mãozinha */
+    transform: scale(1.2); /*Da um zoom no botão*/
 }

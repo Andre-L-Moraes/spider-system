@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="./css/cadastro/Base/base.css">
     <link rel="stylesheet" href="./css/cadastro/Base/cadastro.css">
     <link rel="stylesheet" href="./css/cadastro/Componentes/Botao.css">
+    <link rel="stylesheet" href="./css/cadastro/Componentes/inputs.css">
 
     <link rel="stylesheet" href="./css/rodape.css">
 </head>
@@ -98,6 +99,16 @@
                         <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
                 </fieldset>
+                <fieldset class="input-contato">
+					<legend>Como prefere o nosso contato?</legend>
+					<label for="radio-email"><input type="radio" value="email" id="radio-email" name="contato">Email</label>
+					
+					<label for="radio-telefone"><input type="radio" value="telefone" id="radio-telefone" name="contato">Telefone</label>
+					
+					<label for="radio-whatsapp"><input type="radio" value="whatsapp" id="radio-whatsapp" name="contato" checked>WhatsApp</label>
+				</fieldset>
+				<label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por e-mail?</label>
+
                 <button class="botao">Cadastrar</a>
             </form>
         </section>
