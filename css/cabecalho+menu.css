@@ -1,0 +1,82 @@
+.cabecalho {
+    display: flex; /*deixa os itens flexivel*/
+    align-items: center; /*centraliza a lista */
+    justify-content: space-between; /* deixa o menu no canto direito */
+    background: var(--cor-fundo-cabecalho); /*cor do fundo*/
+    padding: 0 2rem 0 2rem; /*margem interna*/
+}
+
+.logo {
+    width: 320px; /*largurado logo*/
+}
+
+.cabecalho__menu {
+	display: flex; /*deixa os itens flexivel*/
+}
+
+.menu__lista {
+    display: flex; /* deixa a lista um do lado do outro */
+}
+
+.menu__item {
+    font-size: 16px;
+}
+
+.menu__link {
+	padding: 10px; /*margem interna*/
+	text-decoration: none; /*tirar o sublinhado do link*/
+	color: var(--cor-fundo-az-principal); 
+}
+
+@media (min-width: 800px) {
+	.menu__link {
+	background-color: var(--cor-fundo-az-principal); /*cor do fundo*/
+	border: 1px solid var(--cor-fundo-borda-menu); /* cria uma borda */
+	border-radius: 5px; /* borda fica com as pontas arredondadas */
+	transition: .5s; /* tempo de mudança da cor */
+	text-decoration: none; /* tira o subrinhado do link */
+	color: #FFF; /* cor da font */
+	margin-left: 10px;
+	}
+
+	.menu__link.ativo{
+		color: #FFF; /* cor do menu ativo */
+		font-weight: bold; /* fonte em negrito */
+		font-family: 'Kaushan Script', cursive;	
+	}
+
+	.menu__link:hover {
+		color: #FFF;
+		background-color: var(--cor-fundo-borda-menu);
+	} 
+}
+
+@media (max-width: 800px) {
+    .menu__item {
+        font-size: 16px;
+        padding: 10px;
+        border-bottom: 1px solid var(--cor-fundo-borda-menu);
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .menu__lista {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 800px) {
+	.cabecalho__menu {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 800px) {
+    .cabecalho {
+        flex-direction: column;
+        padding: 10px;
+        align-items: initial;
+        text-align: center;
+    }
+}

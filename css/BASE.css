@@ -1,0 +1,43 @@
+:root{
+    --cor-botao-vm: #8d0606;
+    --cor-botao-vm-escuro: #620404;
+
+    --cor-fundo-az-principal: #0f7ba6;
+    --cor-fundo-cabecalho: #d3d3d3;
+    --cor-fundo-borda-menu: #9799a6;
+
+    --cor-texto-claro: #e1f6ff;
+
+    --cor-fundo-cartao: #1f3d49;
+}
+body {
+	font-family: 'Montserrat', sans-serif;;
+}
+
+
+.informacoes {
+    /* background: linear-gradient(#0F7BA6,#0f3f4b,#7c0505); */
+    color: var(--cor-texto-claro);
+    background: var(--cor-fundo-az-principal)
+}
+
+.sobre {
+	margin: 0 auto; /*margem*/
+    text-align: center; /* texto alinhado*/
+}
+
+.titulo__principal {
+    background: var(--cor-fundo-az-principal); /* cor do fundo*/
+    padding: 2rem; /* margem interna*/
+}
+
+.titulo {
+    font-family: 'Kaushan Script', cursive; /*tipo de fonte*/
+    font-size: 25px; /*tamanho da font*/
+    color: var(--cor-texto-claro); /*cor da font*/
+    padding-bottom: 1rem; /*Margem interna para baixo*/
+}
+
+.titulo__descricao {
+    padding-top: 1rem; /* margem interna para cima*/
+}

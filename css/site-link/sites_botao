@@ -1,0 +1,19 @@
+.informacoes_botao{
+    display: block; /*fixo dentro no cartão anterior*/
+    background: #8d0606; /*cor do botao*/
+    border: none; /*sem borda*/
+    border-radius: 7px; /*tamaho do raio do botao*/ 
+    color: #fdfdfd; /*cor da font*/
+    padding: 1rem; /*margem interna*/
+    transition: all .2s ease-in-out; /*transação da cor + combinado com transform do hover*/
+    text-decoration: none; /*tira o sublinhado do link*/
+    text-align: center; /*alinhou o texto*/
+    margin: 1rem 0 1rem; /*margem externa*/
+    font-size: 1,2rem; /*tamanho da font*/
+    transition: 1s all; /*tempo de transição do mouse*/
+}
+.informacoes_botao:hover{
+    background: #620404; /*cor do fundo*/
+    cursor: pointer; /*parece uma mão quando o mause está em cima do botao*/
+    transform: scale(1.1); /*tamanho do zoom do botão*/
+}

@@ -1,0 +1,73 @@
+.container_formulario{
+    display: flex; /*deixa flexcivel*/
+    flex-direction: column; /*direciona os elementos*/
+    align-items: center; /*alinhas os elementos*/
+}
+
+.cartao {
+    background-color: var(--cor-fundo-cartao); /*cor de fundo*/
+    border-radius: 10px; /*Borda aredondada*/
+    color: var(--cor-texto-claro);   /*Cor da font*/
+    width: 100%; /*largura*/
+    max-width: 45rem; /*largura max*/
+    padding: 1.75rem; /*margnem interna*/
+    box-sizing: border-box; /*borda*/
+    margin-bottom: 1rem; /*margem externa baixo*/
+}
+.cartao__titulo {
+    font-size: 28px; /*tamanho da font*/
+    margin-bottom: 1rem; /*margem externa baixo*/
+}
+
+.formulario {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario__legenda {
+    font-size: 22px; /* Tamanho da font*/
+    margin-bottom: 1rem; /*Margem para baixo*/
+}
+
+.input-container {
+    font-weight: 300;
+    position: relative;
+    margin-bottom: 1rem; /*Margem para baixo*/
+    display: flex; /*flexcivel*/
+    flex-direction: column; /*direcionou os elementos*/
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
+
+.input {
+    box-sizing: border-box; /*faz uma borda box*/
+    padding: 1.375rem 0.5rem 0.5rem; /*margem interna*/
+    height: 3.25rem; /*altura*/
+    width: 100%; /*largura*/
+    color: black; /*Cor da data do formulario */
+}
+
+.input::placeholder {   
+    visibility: hidden; /*vai deixar o elemento transparente mas ainda permanece lá*/
+    color: #00000000; /*cor do elemento transparente*/
+}
+
+.input:focus {
+    outline: none; /*a borda é removida*/
+}
+
+.input-label {
+    position: absolute; /*vai para o segundo plano*/
+    top: 1.375rem; /*sobe do eixo principal*/
+    left: 0.5rem; /*vai para a esquerda do eixo principal*/
+    font-size: var(20px);
+    color: black; /*Cor da font dentro do formulario*/
+    transition: all .25s; /*tempo de transação*/
+}
+
+.input:not(:placeholder-shown) + .input-label, .input:focus + .input-label {
+    font-size: 0.875rem; /*tamanho da fonte*/
+    top: 0.25rem; /*sobe do eixo principal*/
+    transition: all .25s; /*tempo de transição*/
+}

@@ -1,9 +1,0 @@
-.menu__lista {
-    display: flex; /* deixa a lista um do lado do outro */
-}
-
-@media (max-width: 800px) {
-    .menu__lista {
-        flex-direction: column;
-    }
-}

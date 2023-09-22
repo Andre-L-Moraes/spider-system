@@ -1,10 +1,10 @@
 .rodape {
-    background-image: url("../Imagens/teia.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    font-family: 'Kaushan Script', cursive;
-    font-weight: bold;
-    padding: 40px;
-    text-align: center;
+    background-image: url("../Imagens/teia.jpg"); /*coloca a inmagem de fundo*/
+    background-repeat: no-repeat; /* não repete a imagem*/
+    background-size: cover; /*ajusta a imagem no elemento pai*/
+    background-position: center; /*centraliza a imagem*/
+    font-family: 'Kaushan Script', cursive; /*fonte principal*/
+    font-weight: bold; /* texto em negrito*/
+    padding: 40px; /*margem interna*/
+    text-align: center; /*texto alinhado*/
 }   

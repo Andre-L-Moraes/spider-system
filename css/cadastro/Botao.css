@@ -1,7 +1,7 @@
 .botao {
     display: block;
     border: none; /* Tira a borda do botão */
-    background-color: #8d0606; /* Cor de fundo*/
+    background-color: var(--cor-botao-vm); /* Cor de fundo*/
     border-radius: 7px;  /*Borda arredondada */
     width: 100%; /* Largura */
     margin-top: 2rem; /*Margem acima*/
@@ -15,7 +15,7 @@
     transition: 1s all; /* Tempo de zoom do botão*/
 }   
 .botao:hover { /* quando passar o mause em cima */
-    background: #620404; /* muda a cor quando o mause estiver encima do botao */
+    background: var(--cor-botao-vm-escuro); /* muda a cor quando o mause estiver encima do botao */
     cursor: pointer; /* muda o cursos para uma mãozinha */
     transform: scale(1.2); /*Da um zoom no botão*/
 }

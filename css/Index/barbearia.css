@@ -1,0 +1,51 @@
+.barbearia {
+    background: #836c2e; /*cor de fundo*/
+    display: flex; /*flexcivel*/
+    justify-content: center; /*alinhamento d elemento*/
+    padding: 2rem 0 2rem; /*margem interna*/
+}
+
+.barbearia__img {
+    width: 200px; /*largura da imagem*/
+    padding: 0 1rem; /*margem interna*/
+    /*float: left; /* coloca o texto do lado da imagem */
+}
+
+.sobre__barbearia {
+    display: flex; /*flexcivel*/
+    flex-direction: column; /*direção do elemanto*/
+    justify-content: space-between; /*espaçamento do elemento*/
+}
+
+.barbearia__titulo {
+    font-family: 'Kaushan Script', cursive; /*tipo de fonte*/
+    text-align: center; /* texto alinhado */
+    font-size: 25px; /* tamanho do fonte */
+    color: var(--cor-texto-claro) /* cor da fonte */
+}
+
+@media (max-width: 800px) {
+    .barbearia__descricao {
+        padding: 1rem; /*margem interna*/
+    }
+}
+
+@media (max-width: 800px) {
+    .barbearia__titulo {
+        padding-top: 1rem; /*margem interna acima*/
+    }
+}
+
+@media (max-width: 800px) {
+    .barbearia__img {
+        margin: auto; /*margem externa*/
+    }
+}
+
+@media (max-width: 800px) {
+    .barbearia {
+        flex-direction: column; /*alinhamento do elemento*/
+        padding: 1rem; /*margem interna*/
+        text-align: justify; /*texto justificado*/
+    }
+}

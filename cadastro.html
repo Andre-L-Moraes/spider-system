@@ -11,21 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/BASE.css">
-    <link rel="stylesheet" href="./css/cabecalho.css">
-    <link rel="stylesheet" href="./css/logo.css">
-    <link rel="stylesheet" href="./css/menu/menu.css">
-    <link rel="stylesheet" href="./css/menu/menu-lista.css">
-    <link rel="stylesheet" href="./css/menu/menu-item.css">
-    <link rel="stylesheet" href="./css/menu/menu-link.css">
-
-    <link rel="stylesheet" href="./css/cadastro/Componentes/Cartao.css">
-    <link rel="stylesheet" href="./css/cadastro/Base-cadastro/base-cadastro.css">
-    <link rel="stylesheet" href="./css/cadastro/Base-cadastro/cadastro.css">
-    <link rel="stylesheet" href="./css/cadastro/Componentes/Botao.css">
-    <link rel="stylesheet" href="./css/cadastro/Componentes/inputs.css">
-
+    <link rel="stylesheet" href="./css/cabecalho+menu.css">
+    <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/rodape.css">
+    <link rel="stylesheet" href="./css/cadastro/cadastro.css">
+    <link rel="stylesheet" href="./css/cadastro/Botao.css">
+
 </head>
 <body>
     <header class="cabecalho">
@@ -33,19 +24,23 @@
         <nav class="menu">
             <ul class="menu__lista">
                 <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
-                <li class="menu__item"><a class="menu__link" href="valores.html">Nossos valores</a></li>
-                <li class="menu__item"><a class="menu__link" href="sistemas.html">Sistemas</a></li>
-                <li class="menu__item"><a class="menu__link ativo" href="contato.html">Contato</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Nossos valores</a></li>
+                <li class="menu__item"><a class="menu__link" href="sites.html">Sites</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Sistemas</a></li>
+                <li class="menu__item"><a class="menu__link ativo" href="cadastro.html">Cadastro</a></li>
             </ul>
         </nav>
     </header>
-    <main class="container flex flex--coluna flex--centro">
-        <div class="cadastro-cabecalho">
-            <h1 class="cadastro-cabecalho__titulo">CADASTRE-SE</Cadastre-se></h1>
-        </div>
+    <main class="informacoes container_formulario">
+        <section class="sobre">
+            <div class="titulo__principal">
+                <h1 class="titulo">CADASTRE-SE</h1>
+                <P class="titulo__descricao">Aqui você pode fazer seu cadastro e escolher como receber nossas notificações.</P>  
+            </div>
+        </section>
         <section class="cartao">
             <h2 class="cartao__titulo">Complete seu cadastro</h2>
-            <form action="./cadastro_concluido.html" class="formulario flex flex--coluna">
+            <form action="#" class="formulario">
                 <fieldset>
                     <legend class="formulario__legenda">Informações básicas</legend>
                     <div class="input-container">
@@ -74,29 +69,6 @@
                     <div class="input-container">
                         <input name="cpf" id="cpf" class="input" type="text" placeholder="CPF" data-tipo="cpf" required>
                         <label class="input-label" for="cpf">CPF</label>
-                        <span class="input-mensagem-erro">Este campo não está válido</span>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend class="formulario__legenda">Endereço</legend>
-                    <div class="input-container">
-                        <input name="cep" id="cep" class="input" type="text" placeholder="CEP" pattern="[\d]{5}-?[\d]{3}" data-tipo="cep" required>
-                        <label class="input-label" for="cep">CEP</label>
-                        <span class="input-mensagem-erro">Este campo não está válido</span>
-                    </div>
-                    <div class="input-container">
-                        <input name="logradouro" id="logradouro" class="input" type="text" placeholder="Logradouro" data-tipo="logradouro" required>
-                        <label class="input-label" for="logradouro">Logradouro</label>
-                        <span class="input-mensagem-erro">Este campo não está válido</span>
-                    </div>
-                    <div class="input-container">
-                        <input name="cidade" id="cidade" class="input" type="text" placeholder="Cidade" data-tipo="cidade" required>
-                        <label class="input-label" for="cidade">Cidade</label>
-                        <span class="input-mensagem-erro">Este campo não está válido</span>
-                    </div>
-                    <div class="input-container">
-                        <input name="estado" id="estado" class="input" type="text" placeholder="Estado" data-tipo="estado" required>
-                        <label class="input-label" for="estado">Estado</label>
                         <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
                 </fieldset>

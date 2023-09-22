@@ -1,0 +1,52 @@
+.missao {
+    font-style: italic; /*tipo da font*/
+    padding: 2rem; /*margem interna*/
+}
+.missao strong {
+    font-weight: bold; /*negrito*/
+} 
+
+.serviços {
+    background: #0F7BA6; /*cor de fundo*/
+    display: flex;  /*deixa plexivel*/
+    justify-content: space-evenly; /*ajuda no médio*/
+    padding: 0 0 2rem; /*margem interna*/
+}
+
+.serviço {
+    background: var(--cor-fundo-cartao); /* cor de fundo */
+    border-radius: 7px; /*raio da borda*/
+    text-align: center; /* texto alinhado */
+    width: 25%; /*largura*/
+    margin-top: 1rem; /*margem externa*/
+}   
+
+.serviço__conteudo {
+    padding: 1rem; /*margem interna*/
+}
+
+.serviço__titulo {
+    font-size: 1.437rem; /*tamanho do titulo */
+    margin: 1rem 0 1rem 0; /*margem externa*/
+    font-weight: bold; /*negrito*/
+}
+
+.serviço__descrição {
+    font-size: 1.1875rem; /* tamanho da font */
+    line-height: 1.5; /*espaçamento do texto*/
+    text-align: justify; /* alinhamento do texto justificado*/
+    margin: 0 0 1rem; /*margem externa*/
+}
+
+@media (max-width: 800px) {
+    .serviço {
+        width: auto; /*largura*/
+    }
+}
+
+
+@media (max-width: 800px) {
+    .serviços {
+        flex-direction: column; /*coloca em coluna*/
+    }
+}
