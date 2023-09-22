@@ -1,0 +1,89 @@
+.site_container{
+    background-color: #D9D9D9; /*cor de fundo*/
+    padding: 3rem 0 3rem; /* margem interna top e bottom*/
+}
+.site_titulo{
+    color: #4F4C4C;/*cor da font*/
+    font-weight: 700; /*negrito da font*/
+    font-size: 1.5rem; /*tamanho da font*/
+    font-family: 'Kaushan Script', cursive; /*tipo da font*/
+    text-transform: uppercase;
+    text-align: center; /*centralizou o texto no meio */
+    margin-bottom: 1rem;
+}
+.site_cartoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.site_cartao{
+    display: flex;
+    flex-direction: column;
+    background-color:#1f3d49; /*cor do fundo*/
+    width: 100%; /*largura */
+    max-width: 300px; /*largura max*/
+    margin-bottom: 2rem; /*margem para baixo*/
+    border-radius: 5px; /*raio da borda*/
+    box-shadow: 0 2px 10px 2px #00000010;
+}
+.site_titulo_cartao{
+    color: #e1f6ff; /*cor da font*/
+    font-weight: 100; /*negrito da font*/
+    font-size: 1.2rem; /*tamanho da font*/
+    text-align: center; /*texto alinhado*/
+    padding: .75rem; /*margem interna*/
+    margin-bottom: .5rem; /*margem externa para baixo*/
+    border-bottom: 1px solid #0F7BA6; /*borda baixo*/
+}
+.site_conteudo{
+    padding: 0 15%;
+}
+.site_texto{
+    color: #e1f6ff; /*cor da font*/
+    text-align: center; /*texto alinhado*/
+    line-height: 28px;
+    font-weight: 1; /*negrito da font*/
+    font-size: 1rem; /*tamanho da font*/
+}
+.informacoes_botao{
+    text-align: center;
+
+    display: block;
+
+    width: 100%;
+    max-width: 350px;
+
+    box-sizing: border-box;
+
+    padding: 1rem 2rem;
+
+    border: 1px solid var(--branco);
+    border-radius: 5px; 
+    /*aqui separa*/
+
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    width: 100%;
+
+    align-self: center;
+
+    padding: .75rem 2rem;
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #e1f6ff;
+}
+/*
+@media screen and (min-width: 1024px) {
+    .site_cartoes {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        max-width: 300px;
+    }
+    .site_container {
+        padding-left: calc((100% - 940px)/2);
+        padding-right: calc((100% - 940px)/2);
+    }
+}
