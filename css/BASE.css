@@ -13,10 +13,7 @@
 body {
 	font-family: 'Montserrat', sans-serif;;
 }
-
-
 .informacoes {
-    /* background: linear-gradient(#0F7BA6,#0f3f4b,#7c0505); */
     color: var(--cor-texto-claro);
     background: var(--cor-fundo-az-principal)
 }

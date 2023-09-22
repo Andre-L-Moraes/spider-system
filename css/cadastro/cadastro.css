@@ -40,6 +40,14 @@
     box-sizing: border-box;
 }
 
+.input-contato{
+    display: flex;
+    justify-content:space-around;
+    height: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
 .input {
     box-sizing: border-box; /*faz uma borda box*/
     padding: 1.375rem 0.5rem 0.5rem; /*margem interna*/
@@ -66,8 +74,35 @@
     transition: all .25s; /*tempo de transação*/
 }
 
+
+/* conferir todos com invalido*/
+
+
+.input-mensagem-erro{
+    display: none;
+}
+
 .input:not(:placeholder-shown) + .input-label, .input:focus + .input-label {
     font-size: 0.875rem; /*tamanho da fonte*/
     top: 0.25rem; /*sobe do eixo principal*/
     transition: all .25s; /*tempo de transição*/
+}
+
+.input-container--invalido{
+    margin-bottom: 0.5rem;
+}
+
+.input-container--invalido .input{
+    border: 1px solid blueviolet;
+    border-radius: 7px;
+}
+
+.input-container--invalido .input-label{
+    color: blueviolet;
+}
+.input-container--invalido .input-mensagem-erro {
+    color: blueviolet;
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
 }

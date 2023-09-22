@@ -5,6 +5,11 @@
     color: var(--cor-texto-claro); /* cor da letra do botao */
     padding: 1rem; /* espaçamento interno */
     transition: all .2s ease-in-out; /* vai mudar de cor o botão mais lento */
+    display: block; /*fixo na caixa anterior*/
+    text-decoration: none; /*tirar o sublinhado do link*/
+    font-size: 15px; /*tamanho da fonte*/
+    margin: 1rem 2.5rem 0 2.5rem; /*margem exerna*/
+    
 }
 
 .serviço__botão:hover { /* quando passar o mause em cima */
