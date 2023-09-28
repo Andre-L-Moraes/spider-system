@@ -1,37 +1,37 @@
 main{
-    align-items: center; 
-    background-color: var(--cor-fundo-az-principal);
+    align-items: center;  /*alinhar item*/
+    background-color: var(--cor-fundo-az-principal); /*cor de fundo*/
     display: flex; /*deixa flexcivel*/
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: column; /*direção do elemento*/
+    justify-content: center; 
 }
 
 .teclado{
-    background-color: var(--cor-fundo-cartao);
-    border-radius: 30px;
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 10px;
-    margin-bottom: 2rem;
+    background-color: var(--cor-fundo-cartao); /*cor de fundo*/
+    border-radius: 30px; /*borda aredondada*/
+    display: grid;/* elemento em grid*/
+    gap: 10px; 
+    grid-template-columns: repeat(3, 1fr); 
+    padding: 10px; /*margem interna*/
+    margin-bottom: 2rem; /*margem externa*/
 }
 
 .tecla{
-    background-color:	var(--cor-botao-vm);
-    border-radius: 30px;
-    color: var(--cor-texto-claro);
-    height: 120px;
-    font-size: 1.75em;
+    background-color:	var(--cor-botao-vm); /*cor de fundo*/
+    border-radius: 30px;/*borda aredondada*/
+    color: var(--cor-texto-claro); /*cor de fonte*/
+    height: 120px; /*altura*/
+    font-size: 1.75em; /*tamanho da fonte*/
     line-height: 120px;
-    width: 120px;
+    width: 120px; /*largura*/
 }
 
 .tecla.ativa,
 .tecla:active{
-    background-color: var(--cor-texto-claro);
-    border: 4px solid var(--cor-texto-claro);
-    box-shadow: 3px 3px 0 var(--cor-botao-vm) inset;
-    color: var(--cor-botao-vm);
+    background-color: var(--cor-texto-claro); /* cor de fundo*/
+    border: 4px solid var(--cor-texto-claro); /*borda*/
+    box-shadow: 3px 3px 0 var(--cor-botao-vm) inset; 
+    color: var(--cor-botao-vm); /* cor da fonte*/
     outline: none;
 }
 
@@ -39,4 +39,10 @@ main{
 .tecla:focus {
     outline: none;
     box-shadow: 1px 1px 10px white; /*efeito de sombra branca*/
+}
+
+@media (max-width: 500px) {
+    .teclado{
+    grid-template-columns: repeat(2, 1fr); 
+    }
 }

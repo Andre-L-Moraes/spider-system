@@ -3,6 +3,7 @@
     background-repeat: no-repeat; /* não repete a imagem*/
     background-size: cover; /*ajusta a imagem no elemento pai*/
     background-position: center; /*centraliza a imagem*/
+    color: black;
     font-family: 'Kaushan Script', cursive; /*fonte principal*/
     font-weight: bold; /* texto em negrito*/
     padding: 40px; /*margem interna*/

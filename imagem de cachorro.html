@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem de cachorro</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/cabecalho+menu.css">
+    <link rel="stylesheet" href="./css/rodape.css"> 
+
+    <script src="java/Imagem Cachorro/img-cachorro.js"></script>
+    <link rel="stylesheet" href="./css/Img-Cachorro/imagem-cachorro.css"> 
+    <link rel="stylesheet" href="./css/Img-Cachorro/botao-cachorro.css"> 
+
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="logo" src="./Imagens/Spider System Transp.png" alt="Spider System">
+        <nav class="menu">
+            <ul class="menu__lista">
+                <li class="menu__item"><a class="menu__link ativo" href="index.html">Home</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Nossos valores</a></li>
+                <li class="menu__item"><a class="menu__link" href="sites.html">Sites</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Sistemas</a></li>
+                <li class="menu__item"><a class="menu__link" href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="informacoes">
+        <section class="sobre">
+            <div class="titulo__principal">
+                <h1 class="titulo">IMAGEM ALEATORIO DE CACHORRO</h1>
+                <P class="titulo__descricao">Site aprendido na faculdade.</P>
+                <P class="titulo__descricao">A partir do click no botão abaixo uma nova imagem aleatória de cachorros será carregada utilizando requisições assíncronas com XMLHttpRequest</P>
+            </div>
+        </section>
+            <div class="container_cachorro">
+                <img id="img_dog" class="imagem_cachorro" src="" alt="Aguardando a imagem ser carregada" />
+                <button class="cartão_cachorro" onclick="carregarImagens()">Carregar Imagens</button>
+            </div>    
+        <footer class="rodape">
+            <p class="copyright">&copy; Spider System - 2022</p>
+        </footer>
+</body>
+    
+</html>

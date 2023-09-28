@@ -1,0 +1,21 @@
+.container_cachorro{
+    margin-bottom: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imagem_cachorro {
+    background-color: var(--cor-fundo-cartao);
+    border-radius: 7px;
+    max-width: 600px;
+    max-height: 400px;
+    padding: 1rem;
+}
+
+@media (max-width: 450px) {
+    .imagem_cachorro{
+        max-width: 280px;
+        max-height: 280px;
+    }
+}
