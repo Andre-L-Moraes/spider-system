@@ -25,7 +25,7 @@
     justify-content: center;
 }
 .site_cartao{
-    background-color:#1f3d49; /*cor do fundo*/
+    background-color:var(--cor-fundo-cartao); /*cor do fundo*/
     width: 100%; /*largura */
     max-width: 300px; /*largura max*/
     margin: 0 1rem 2rem; /*margem para baixo*/

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imagem de cachorro</title>
+    <title>Frutas e Frutos</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
@@ -11,12 +11,9 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/cabecalho+menu.css">
-    <link rel="stylesheet" href="./css/rodape.css"> 
+    <link rel="stylesheet" href="./css/rodape.css">
 
-    <script src="java/Imagem Cachorro/img-cachorro.js"></script>
-    <link rel="stylesheet" href="./css/Sites/Img-Cachorro/imagem-cachorro.css"> 
-    <link rel="stylesheet" href="./css/Sites/Img-Cachorro/botao-cachorro.css"> 
-
+    <link rel="stylesheet" href="./css/Sites/Frutas e Frutos/cabecalho-menu.css">
 </head>
 <body>
     <header class="cabecalho">
@@ -34,18 +31,24 @@
     <main class="informacoes">
         <section class="sobre">
             <div class="titulo__principal">
-                <h1 class="titulo">IMAGEM ALEATORIO DE CACHORRO</h1>
-                <P class="titulo__descricao">Site aprendido na faculdade.</P>
-                <P class="titulo__descricao">A partir do click no botão abaixo uma nova imagem aleatória de cachorros será carregada utilizando requisições assíncronas com XMLHttpRequest</P>
+                <h1 class="titulo">FRUTAS E FRUTOS</h1>
+                <P class="titulo__descricao">Um site que foi encinado pela alura.</P>        
             </div>
         </section>
-            <div class="container_cachorro">
-                <img id="img_dog" class="imagem_cachorro" src="" alt="Aguardando a imagem ser carregada" />
-                <button class="cartão_cachorro" onclick="carregarImagens()">Carregar Imagens</button>
-            </div>    
-        <footer class="rodape">
-            <p class="copyright">&copy; Spider System - 2022</p>
-        </footer>
+        <section class="cabecalho_frutas">
+            <img class="logo_fruta" alt="Fruta e Fruto" src="./Imagens/Frutas e Frutos/logo.jpg"/>
+            <nav class="menu_frutas">
+                <ul class="menu_lista">
+                    <li class="menu_item"><a class="menu_link ativo" href="#">Início</a></li>
+                    <li class="menu_item"><a class="menu_link" href="#">Receitas</a></li>
+                    <li class="menu_item"><a class="menu_link" href="#">Quem Somos</a></li>
+                    <li class="menu_item"><a class="menu_link" href="#">Comunidade</a></li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p class="copyright">&copy; Spider System - 2022</p>
+    </footer>
 </body>
-    
 </html>
