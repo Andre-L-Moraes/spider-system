@@ -1,17 +1,23 @@
 .site_container{
-    background-color: #D9D9D9; /*cor de fundo*/
-    padding: 2rem 0 2rem; /* margem interna top e bottom*/
+    background-color: var(--cor-fundo-cabecalho); /*cor de fundo*/
+    padding: 2rem 0 0rem; /* margem interna top e bottom*/
+    border-top: 1px solid var(--cor-fundo-az-principal); /*borda em cima*/
 }
-
 .site_titulo{
-    color: #4F4C4C;/*cor da font*/
+    color: var(--cor-fundo-cartao);/*cor da font*/
     font-weight: 700; /*negrito da font*/
     font-size: 1.5rem; /*tamanho da font*/
     font-family: 'Kaushan Script', cursive; /*tipo da font*/
     text-transform: uppercase;
     text-align: center; /*centralizou o texto no meio */
     margin-bottom: 2rem;
-
+}
+.site_descricao {
+    color: var(--cor-fundo-cartao);/*cor da font*/
+    font-size: 1.1875rem; /* tamanho da font */
+    line-height: 1.5; /*espaçamento do texto*/
+    text-align: center; /* alinhamento do texto justificado*/
+    margin: 0 0 1rem; /*margem externa*/
 }
 .site_cartoes{
     display: flex;
@@ -24,7 +30,7 @@
     max-width: 300px; /*largura max*/
     margin: 0 1rem 2rem; /*margem para baixo*/
     border-radius: 5px; /*raio da borda*/
-    box-shadow: 0 2px 10px 2px #00000010;
+    box-shadow: 0 2px 10px 2px #00000010; /*sombra*/
 }
 .site_titulo_cartao{
     color: #e1f6ff; /*cor da font*/
@@ -33,7 +39,7 @@
     text-align: center; /*texto alinhado*/
     padding: .75rem; /*margem interna*/
     margin-bottom: .5rem; /*margem externa para baixo*/
-    border-bottom: 1px solid #0F7BA6; /*borda baixo*/
+    border-bottom: 1px solid var(--cor-fundo-az-principal); /*borda baixo*/
 }
 .site_conteudo{
     padding: 0 15%;
