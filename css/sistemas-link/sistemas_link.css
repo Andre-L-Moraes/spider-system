@@ -1,0 +1,53 @@
+.sistemas_container{
+    background-color: var(--cor-fundo-cabecalho); /*cor de fundo*/
+    padding: 2rem 0 0rem; /* margem interna top e bottom*/
+    border-top: 1px solid var(--cor-fundo-az-principal); /*borda em cima*/
+}
+.sistemas_titulo{
+    color: var(--cor-fundo-cartao);/*cor da font*/
+    font-weight: 700; /*negrito da font*/
+    font-size: 1.5rem; /*tamanho da font*/
+    font-family: 'Kaushan Script', cursive; /*tipo da font*/
+    text-transform: uppercase;
+    text-align: center; /*centralizou o texto no meio */
+    margin-bottom: 2rem;
+}
+.sistemas_descricao {
+    color: var(--cor-fundo-cartao);/*cor da font*/
+    font-size: 1.1875rem; /* tamanho da font */
+    line-height: 1.5; /*espaçamento do texto*/
+    text-align: center; /* alinhamento do texto justificado*/
+    margin: 0 0 1rem; /*margem externa*/
+}
+.sistemas_cartoes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sistemas_cartao{
+    background-color:var(--cor-fundo-cartao); /*cor do fundo*/
+    width: 100%; /*largura */
+    max-width: 300px; /*largura max*/
+    margin: 0 1rem 2rem; /*margem para baixo*/
+    border-radius: 5px; /*raio da borda*/
+    box-shadow: 0 2px 10px 2px #00000010; /*sombra*/
+}
+.sistemas_titulo_cartao{
+    color: #e1f6ff; /*cor da font*/
+    font-weight: 100; /*negrito da font*/
+    font-size: 1.2rem; /*tamanho da font*/
+    text-align: center; /*texto alinhado*/
+    padding: .75rem; /*margem interna*/
+    margin-bottom: .5rem; /*margem externa para baixo*/
+    border-bottom: 1px solid var(--cor-fundo-az-principal); /*borda baixo*/
+}
+.sistemas_conteudo{
+    padding: 0 15%;
+}
+.sistemas_texto{
+    color: #e1f6ff; /*cor da font*/
+    text-align: center; /*texto alinhado*/
+    line-height: 28px;
+    font-weight: 1; /*negrito da font*/
+    font-size: 1rem; /*tamanho da font*/
+}

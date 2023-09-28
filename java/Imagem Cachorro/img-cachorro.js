@@ -1,4 +1,5 @@
-/*
+/* pode ser nessa linguagem
+
 function carregarImagens() { 
     var url = "https://dog.ceo/api/breeds/image/random"; //API
     fetch(url, {
@@ -17,7 +18,7 @@ function carregarImagens() {
       });
   }
   */
- 
+  /* ou pode ser nessa também*/
   function carregarImagens(){
       
     var xmlHttpRequest = new XMLHttpRequest();
