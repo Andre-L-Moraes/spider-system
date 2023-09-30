@@ -1,0 +1,31 @@
+.cnpj_direto{
+    background-color: var(--cor-fundo-cabecalho);
+    color: var(--cor-fundo-cartao);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+.cnpj_titulo{
+    color: var(--cor-fundo-cartao);/*cor da font*/
+    font-weight: 700; /*negrito da font*/
+    font-family: 'Kaushan Script', cursive; /*tipo da font*/
+    text-transform: uppercase;
+    text-align: center; /*centralizou o texto no meio */
+    margin-bottom: 1rem;
+}
+.cnpj_titulo2{
+    color: var(--cor-texto-claro);/*cor da font*/
+    font-weight: 700; /*negrito da font*/
+    font-family: 'Kaushan Script', cursive; /*tipo da font*/
+    text-transform: uppercase;
+    text-align: center; /*centralizou o texto no meio */
+    margin-bottom: 1rem;
+}
+.cnpj_resultado_direto{
+    background-color: var(--cor-fundo-cartao);
+    color: var(--cor-texto-claro);
+    padding: 1rem;
+    border-radius: 7px;
+    letter-spacing: 1px; /* Espaçamento entre os caracteres */
+}
