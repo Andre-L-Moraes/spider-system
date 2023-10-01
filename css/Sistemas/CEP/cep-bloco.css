@@ -1,0 +1,57 @@
+.cep-bloco{
+    background-color: var(--cor-fundo-cabecalho);
+}
+.cep-cartao{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 9rem;
+    background-color: var(--cor-fundo-cartao);
+    border-radius: 5px;
+}
+.cep-info{
+    margin: 1rem;
+}
+.cep-dados {    
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    font-weight: 700;
+}
+.cep-resultado{
+    background-color: white;
+    color: black;
+    border-radius: 2px;
+    height: 20px;
+    padding: 10px;
+    text-align: center  ;
+}  
+.DDD{
+    min-width: 40px;
+}
+.Logradouro{
+    min-width: 300px;
+}
+.CEP{
+    min-width: 90px;
+}
+.UF{
+    min-width: 40px;
+}
+.Cidade{
+    min-width: 200px;
+}
+.Bairro{
+    min-width: 200px;
+}
+
+@media (max-width: 800px) {
+    .cep-cartao{
+        display: flex;
+        margin: 0 0;
+        flex-direction: column;
+        align-content: space-around;
+        align-items: flex-start;
+    }
+    .Logradouro{
+        min-width: 200px;
+    }
+}

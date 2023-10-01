@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="./css/Sistemas/CEP/botao-cep.css">
     <link rel="stylesheet" href="./css/Sistemas/CEP/cep-direto.css">
+    <link rel="stylesheet" href="./css/Sistemas/CEP/cep-bloco.css">
 </head>
 <body>
     <header class="cabecalho">
@@ -38,21 +39,42 @@
         </section>
         <section class="cep_direto">
             <h2 class="cep_titulo">Insira o numero do CEP sem (-)</h2>
-            <input id="cep" name="cep" type="text" placeholder="Digite apenas numeros">
-            <button class="botão_CEP" onclick="consultarCEP()">Consulta</button>    
+            <input id="cep" name="cep" type="text"  placeholder="Digite apenas numeros">
+            <button class="botão_CEP" onclick="consultarCEP()" >Consulta</button>    
+        </section>
+        <section class="cep-bloco">
+            <div class="cep-cartao">
+                <div class="cep-info">
+                    <p class="cep-dados">CEP:</p> 
+                    <p class="cep-resultado CEP"><span id="cep2"></span></p>
+                </div>
+                <div class="cep-info">
+                    <p class="cep-dados">Logradouro: </p> 
+                    <p class="cep-resultado Logradouro"><span id="logradouro"></span></p>
+                </div> 
+                <div class="cep-info">
+                    <p class="cep-dados">Bairro: </p> 
+                    <p class="cep-resultado Bairro"><span id="bairro"></span></p>
+                </div>
+                <div class="cep-info">
+                    <p class="cep-dados">Cidade: </p> 
+                    <p class="cep-resultado Cidade"><span id="cidade"></span></p>
+                </div>
+                <div class="cep-info">
+                    <p class="cep-dados">UF: </p> 
+                    <p class="cep-resultado UF"><span id="uf"></span></p>
+                </div>
+                <div class="cep-info">
+                    <p class="cep-dados">DDD: </p> 
+                    <p class="cep-resultado DDD"><span id="ddd2"></span></p>
+                </div> 
+            </div>                 
+        </section>
+        <section class="cep_direto">
             <div class="cep_resultado_direto">
                 <h3 class="cep_titulo2">Resultado</h3>
                 <p id="resultado"></p>
-            </div>    
-        </section>
-        <section class="cep-bloco">
-            <div class="cep-info">
-                <p>CEP: <span id="cep2"></span></p>
-                <p>UF: <span id="uf"></span></p>
-                <p>Cidade: <span id="cidade"></span></p>
-                <p>Bairro: <span id="bairro"></span></p>
-                <p>Logradouro: <span id="logradouro"></span></p>
-              </div>              
+            </div>  
         </section>
     </main>
 </body>
