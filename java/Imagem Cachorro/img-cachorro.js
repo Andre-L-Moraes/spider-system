@@ -46,3 +46,8 @@ function carregarImagens() {
     xmlHttpRequest.send(null);
   
   }
+          // Função para acionar o botão automaticamente após o carregamento da página
+          window.onload = function () {
+            var botao = document.getElementById("Cão_botao");
+            botao.click(); // Simula um clique no botão
+        };  

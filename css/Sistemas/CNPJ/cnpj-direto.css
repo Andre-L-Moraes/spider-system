@@ -29,3 +29,12 @@
     border-radius: 7px;
     letter-spacing: 1px; /* Espaçamento entre os caracteres */
 }
+#cnpj {
+    width: 225px;
+    font-size: 1.25rem;
+    border-color: transparent;
+    padding: 0.5rem;
+    letter-spacing: 0.5px;
+    border-radius: 7px;
+    text-align: center;
+}
