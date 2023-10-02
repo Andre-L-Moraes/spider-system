@@ -1,0 +1,11 @@
+@media screen and (min-width: 0) { /* telas pequenas */
+    .logo_frutas {
+        display: none; /* sem logo */
+    }
+}
+
+@media screen and (min-width: 768px) { /* Telas grandes */
+    .logo_frutas {
+        display: block; /* logo visivel */
+    }
+}

@@ -1,0 +1,7 @@
+.rodape_frutas {
+    background: #bfbfbf; /* cor de fundo*/
+    color: #fdfdfd; /* cor da font */
+    text-align: right; /* alinhamento do texto */
+    padding: 1.5625rem 5rem; /* espaçamento */
+    text-transform: lowercase; /* letra minuscula */
+}

@@ -1,0 +1,17 @@
+.pessoas {
+    display: flex; /* colocar os objetos um do lado do outro */
+    padding-top: 3rem; /* espaçamento no top (cima) */
+    justify-content: space-around; /* espaço em todas as caixas */
+}
+
+@media screen and (min-width: 0) {
+    .pessoas{
+        flex-direction: column; /* para as imagens ficarem em coluna - um de baixo do outro */
+    }
+}
+
+@media screen and (min-width: 768px) { /* tela tablet */
+    .pessoas{
+        flex-direction: row; /* para as imagens ficarem um do lado do outro */
+    }
+}

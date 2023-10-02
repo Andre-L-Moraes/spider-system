@@ -1,0 +1,27 @@
+.receita {
+    background: #fdfdfd; /* cor de fundo */
+    display: flex; /* para os elementos fiquem alinhados um do lado do outro */
+    flex-direction: column; /* elementos em coluna */
+    margin-bottom: 5rem; /* margem entre a imagem e o botão */
+}
+
+@media screen and (min-width: 0) {
+    .receita {
+        margin-right: 1rem; /* margem */
+        width: 100%; /* uma receita por linha */
+    }
+}
+
+@media screen and (min-width: 768px) { /* tela tablet */
+    .receita {
+        margin-right: 2.5rem;
+        width: calc(33.33% - 2.5rem); /* desconsidera a imagem e divide a tela em 3 imagens */
+    }
+}
+
+@media screen and (min-width: 992px) { /* tela notebook */
+    .receita {
+        margin-right: 5rem; /* margem a direita */
+        width: calc(25% - 5rem); /*desconsidera ou diminue o 5rem da margem a direita (25% para dividir a tela para 4 imagens)*/
+    }
+}

@@ -1,0 +1,7 @@
+.menu_item {
+    list-style: none; /* tira as bolinhas do link que é a bolinha da lista (ul)*/
+}
+
+.menu_item:last-child .menu_link {
+    margin-right: 0; /* zera a margem do lado direito*/
+}

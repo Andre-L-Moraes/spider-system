@@ -1,0 +1,24 @@
+.banner__titulo {
+    color: #fdfdfd; /* cor da fonte */
+    font-family: Pacifico, cursive; /* muda a letra da fonte */
+    position: absolute; /* deixa a fonte sobre a resto da pagina */
+    left: 50%; /* deixa a fonte iniciando no meio da pagina */
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75); /* cor da sombra do fonte */
+    top: 50%; /* vai para 50% do top da imagem */
+    text-align: center; /* centraliza o texto */
+    transform: translate(-50%, -50%); /* centralizou o texto na imagem */
+    width: 100%; /* deixou o texto em uma linha */
+}
+
+@media screen and (min-width: 0) { /* telas pequenas */
+    .banner__titulo {
+        font-size: 3rem; /* tamanho da font */
+    }
+}
+
+@media screen and (min-width: 768px) { /* tela grande */
+    .banner__titulo {
+        font-size: 5.0625rem; /* almenta o tamanho da fonte */
+    }
+    
+}
