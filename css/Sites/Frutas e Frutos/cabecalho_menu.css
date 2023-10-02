@@ -1,0 +1,61 @@
+.cabecalho_frutas{
+    align-items: center; /*alinha os item no centro do cabecalho*/
+    background: #f9f9f9; /* cor do cabecalho */
+    display: flex; /* deixa o menu ao lado da imagem */
+    justify-content: space-between; /* deixa o menu no canto direito */
+    padding-left: 2rem; /* desloca o conteudo da esquerda */
+    padding-right: 2rem; /* desloca o conteudo da direita */
+}
+
+.menu_lista {
+    display:  flex; /* deixa o menu um do lado do outro */
+}
+.menu_link{
+    color: #808080; /* cor da fonte do menu */
+    margin-right: 1.25rem; /* margem entre os links */
+    text-decoration: none; /* tira o subrinhado dos links */
+    text-transform: lowercase; /* deixa todas as letras minusculas */
+    font-family: Roboto, sans-serif;
+}
+
+.menu_link.ativo{
+    color: #333333; /* cor do menu ativo */
+    font-weight: bold; /* fonte em negrito */
+}
+
+.menu_link:hover {
+    text-decoration: underline;
+}
+.menu_item {
+    list-style: none; /* tira as bolinhas do link que é a bolinha da lista (ul)*/
+}
+
+.menu_item:last-child .menu_link {
+    margin-right: 0; /* zera a margem do lado direito*/
+}
+
+@media screen and (min-width: 0) { /* layout para telas menores */
+    .cabecalho_frutas{
+        justify-content: center; /* alinhado no centro */
+        padding: 0 1rem; /* espaçamento nas laterais */
+    }
+}
+
+@media screen and (min-width: 768px) { /* layout para tela maior de 768px */
+    .cabecalho_frutas {
+        padding: 0 5rem; /* espaçamento nas laterias */
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 0) { /* telas pequenas */
+    .logo_frutas {
+        display: none; /* sem logo */
+    }
+}
+
+@media screen and (min-width: 768px) { /* Telas grandes */
+    .logo_frutas {
+        display: block; /* logo visivel */
+    }
+}

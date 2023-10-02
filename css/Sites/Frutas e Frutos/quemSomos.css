@@ -1,6 +1,15 @@
+.quem-somos {
+    text-align: center; /* centralizando o conteudo no centro */
+    padding: 5rem; /* espacamento */
+}
 .quem-somos__titulo {
     margin-bottom: 1rem; /* margem para baixo */
     color: #8d0606; /* cor da font */
     font-size: 3.1875rem; /*tamanho da font */
     font-family: Pacifico, cursive; /* estilo da fonte */
+}
+.quem-somos__descricao {
+    font-weight: 100;
+    font-size: 1.75rem;
+    color: #595959;
 }

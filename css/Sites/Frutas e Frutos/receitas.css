@@ -4,6 +4,66 @@
     flex-wrap: wrap; /* quebra os elementos em linhas e colunas para baixo */
 }
 
+.receita {
+    background: #fdfdfd; /* cor de fundo */
+    display: flex; /* para os elementos fiquem alinhados um do lado do outro */
+    flex-direction: column; /* elementos em coluna */
+    margin-bottom: 5rem; /* margem entre a imagem e o botão */
+}
+
+.receita__titulo {
+    font-size: 1.437rem; /*tamanho do titulo */
+}
+
+.receita__imagem {
+    height: 150px; /* altura */
+}
+
+.receita__descricao {
+    font-size: 1.1875rem; /* tamanho da font */
+    line-height: 1.5;
+    text-align: justify; /* alinhamento do texto justificado*/
+}
+
+.receita__conteudo {
+    padding: 1rem; /* espaçamento interno */
+}
+
+.receita__botao {
+    background: #8d0606; /* cor de fundo */
+    border: none; /* tirar a borda do botao */
+    border-radius: 5px; /*borda aredondada do botao*/
+    color: #fdfdfd; /* cor da letra do botao */
+    padding: 1rem; /* espaçamento interno */
+    transition: all .1s ease-in-out; /* vai mudar de cor o botão mais lento */
+}
+
+.receita__botao:hover { /* quando passar o mause em cima */
+    background: #620404; /* muda a cor quando o mause estiver encima do botao */
+    cursor: pointer; /* muda o cursos para uma mãozinha */
+}
+
+@media screen and (min-width: 0) {
+    .receita {
+        margin-right: 1rem; /* margem */
+        width: 100%; /* uma receita por linha */
+    }
+}
+
+@media screen and (min-width: 768px) { /* tela tablet */
+    .receita {
+        margin-right: 2.5rem;
+        width: calc(33.33% - 2.5rem); /* desconsidera a imagem e divide a tela em 3 imagens */
+    }
+}
+
+@media screen and (min-width: 992px) { /* tela notebook */
+    .receita {
+        margin-right: 5rem; /* margem a direita */
+        width: calc(25% - 5rem); /*desconsidera ou diminue o 5rem da margem a direita (25% para dividir a tela para 4 imagens)*/
+    }
+}
+
 @media screen and (min-width: 0) {
     .receitas {
         padding: 5rem 0 0 1rem;

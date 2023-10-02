@@ -1,3 +1,7 @@
+.banner {
+    position: relative; /* fez o texto centralizar na imagem em vez do site, pq é a classe "pai" */
+}
+
 .banner__titulo {
     color: #fdfdfd; /* cor da fonte */
     font-family: Pacifico, cursive; /* muda a letra da fonte */
@@ -8,6 +12,26 @@
     text-align: center; /* centraliza o texto */
     transform: translate(-50%, -50%); /* centralizou o texto na imagem */
     width: 100%; /* deixou o texto em uma linha */
+}
+
+.banner__imagem{
+    background-image: url('../../../Imagens/Frutas_e_Frutos/banner.jpg'); /* mostrar a imagem */
+    background-position: center; /* centralizar a imagem na caixa */
+    background-repeat: no-repeat; /* não repetir a imagem dentro da caixa */
+    background-size: cover; /* preencher a imagem conforme a caixa */
+    width: 100%; /* deixa a imagem 100% da largura da pagine */
+}
+
+@media screen and (min-width: 0) { /* telas pequenas */
+    .banner__imagem{
+        height: calc(100vh - 50px);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .banner__imagem {
+        height: calc(100vh - 72px);
+    }
 }
 
 @media screen and (min-width: 0) { /* telas pequenas */
