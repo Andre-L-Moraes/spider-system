@@ -10,7 +10,7 @@
     grid-template-rows: 50px auto auto;
 }
 
-.cabecalho {
+.cabecalho_store {
     align-items: center;
     display: flex;
     grid-area: cabecalho;
@@ -22,7 +22,7 @@
     padding: 0 2rem;
 }
 
-.rodape {
+.rodape_store {
     background: #fdfdfd;
     color: #333333;
     font-size: .8rem;
