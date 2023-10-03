@@ -1,0 +1,38 @@
+.jogo{
+    text-align: center;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.canvas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    background-color: var(--cor-fundo-cartao);
+    width: 600px;   
+    border-radius: 7px;
+}
+.canvas_velocidade{
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    padding: 1rem;
+}
+.botao_velocidade {
+        background: var(--cor-botao-vm); /* cor de fundo */
+        border: none; /* tirar a borda do botao */
+        border-radius: 5px; /*borda aredondada do botao*/
+        color: #fdfdfd; /* cor da letra do botao */
+        padding: 1rem; /* espaçamento interno */
+        transition: all .2s ease-in-out; /* vai mudar de cor o botão mais lento */
+        margin-left: 2rem;
+}
+.botao_velocidade:hover{
+    background: var(--cor-botao-vm-escuro); /* muda a cor quando o mause estiver encima do botao */
+    cursor: pointer; /* muda o cursos para uma mãozinha */
+}
+#mycanvas {
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    background-color: var(--cor-fundo-cabecalho); /* Cor de fundo desejada */
+}
