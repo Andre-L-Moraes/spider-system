@@ -1,7 +1,7 @@
-body {
+.bodyy {
 	font-family: 'Montserrat', sans-serif;;
 }
-header {
+.headerr {
 	background: #BBBBBB;
 	padding: 20px 0;
 }
@@ -10,24 +10,24 @@ header {
 	width: 940px;
 	margin: 0 auto;
 }
-nav {
+.navv {
 	position: absolute;
 	top: 110px;
 	right: 0;
 }
-nav li {
+.navv li {
 	display: inline;
 	margin: 0 0 0 15px;
 }
 
-nav a {
+.navv a {
 	text-transform: uppercase;
 	color: #000000;
 	font-weight: bold;
 	font-size: 22px;
 	text-decoration: none;
 }
-nav a:hover {
+.navv a:hover {
 	color: #C78C19;
 	text-decoration: underline;
 }
@@ -69,13 +69,13 @@ nav a:hover {
 	margin-top: 10px;
 }
 
-footer {
+.footerr {
 	text-align: center;
-	background: url("bg.jpg");
+	background: url("../../../Imagens/Barbearia_web/bg.jpg");
 	padding: 40px 0;
 }
 
-.copyright {
+.copyright_barbearia_web {
 	color:#FFFFFF;
 	font-size: 13px;
 	margin: 20px;
@@ -217,7 +217,7 @@ td, th {
 	h1 {
 		text-align: center;
 	}
-	nav {
+	.navv {
 		position: static;
 	}
 	.lista-beneficios, .imagem-beneficios {

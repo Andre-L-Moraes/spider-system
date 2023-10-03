@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Contato - Barbearia Alura</title>
+
+		<link rel="stylesheet" type="text/css" href="./css/reset.css">
+		<link rel="stylesheet" type="text/css" href="./css/Sites/Barbearia_web/barbearia_contato.css">
+
+		<link rel="stylesheet" href="./css/base.css">
+		<link rel="stylesheet" href="./css/cabecalho+menu.css">
+		<link rel="stylesheet" href="./css/rodape.css">
+	
+		<link rel="stylesheet" href="./css/sistemas-link/sistemas_link.css">
+		<link rel="stylesheet" href="./css/sistemas-link/sistemas_botao.css">
+	
+	</head>
+	<body>
+		<header class="cabecalho">
+			<img class="logo" src="./Imagens/Spider System Transp.png" alt="Spider System">
+			<nav class="menu">
+				<ul class="menu__lista">
+					<li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Nossos valores</a></li>
+					<li class="menu__item"><a class="menu__link ativo" href="sites.html">Sites</a></li>
+					<li class="menu__item"><a class="menu__link" href="sistemas.html">Sistemas</a></li>
+					<li class="menu__item"><a class="menu__link" href="cadastro.html">Cadastro</a></li>
+				</ul>
+			</nav>
+		</header>
+        <section class="headerr bodyy ">
+            <div class="caixa">
+				<h1><img src="./Imagens/Barbearia_web/logo.png" alt="Logo da Barbearia Alura"></h1>
+				<nav class="navv">
+					<ul>
+						<li><a href="Barbearia-web.html">Home</a></li>
+						<li><a href="barbearia_produto.html">Produtos</a></li>
+						<li><a href="./barbearia_contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+        </section>
+		<main class="bodyy">
+			<form>
+				<label for="nomesobrenome">Nome e sobrenome</label>
+				<input type="text" id ="nomesobrenome"name="" class="input-padrao" required>
+
+				<label for="email">Email</label>
+				<input type="email" id="email" name="" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+				<label for="telefone">Telefone</label>
+				<input type="tel" id="telefone" name="" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+				<label for="mensagem">Mensagem</label>
+				<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+				<fieldset>
+					<legend>Como prefere o nosso contato?</legend>
+					<label for="radio-email"><input type="radio" value="email" id="radio-email" name="contato">Email</label>
+					
+					<label for="radio-telefone"><input type="radio" value="telefone" id="radio-telefone" name="contato">Telefone</label>
+					
+					<label for="radio-whatsapp"><input type="radio" value="whatsapp" id="radio-whatsapp" name="contato" checked>WhatsApp</label>
+				</fieldset>
+
+				<fieldset>
+					<legend>Qual horário prefere ser atendido?</legend>
+					<select>
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>
+					</select>
+				</fieldset>
+				<label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por e-mail?</label>
+
+				<input type="submit" value="Enviar formulário" class="enviar" name="">
+			</form>
+
+			<table class="bodyy">
+				<thead>
+					<tr>
+						<th>Dia</th>
+						<th>Horário</th>					
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Segunda</td>
+						<td>8h ~ 20hs</td>
+					</tr>
+					<tr>
+						<td>Quarta</td>
+						<td>8h ~ 20hs</td>
+					</tr>
+					<tr>
+						<td>Sexta</td>
+						<td>8h ~ 20hs</td>
+					</tr>
+				</tbody>
+			</table>
+		</main>
+		<section class="bodyy footerr">
+			<img src="./Imagens/Barbearia_web/logo-branco.png" alt="Logo da Barbearia Alura">
+			<p class="copyright_barbearia_web">&copy; Copyright Barbearia Alura - 2019</p>
+		</section>
+		<footer class="rodape">
+			<p class="copyright">&copy; Spider System - 2022</p>
+		</footer>
+	</body>
+</html>

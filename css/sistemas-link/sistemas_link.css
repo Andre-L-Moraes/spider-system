@@ -3,6 +3,14 @@
     padding: 2rem 0 0rem; /* margem interna top e bottom*/
     border-top: 1px solid var(--cor-fundo-az-principal); /*borda em cima*/
 }
+
+.sistemas_container strong {
+	font-weight: bold;
+}
+.sistemas_container em {
+	font-style: italic;	
+}
+
 .sistemas_titulo{
     color: var(--cor-fundo-cartao);/*cor da font*/
     font-weight: 700; /*negrito da font*/
