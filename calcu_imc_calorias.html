@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/cabecalho+menu.css">
+    <link rel="stylesheet" href="./css/rodape.css">
+
+    <link rel="stylesheet" href="./css/Sistemas/IMC/IMC.css">
+    <link rel="stylesheet" href="./css/Sistemas/IMC/botão_IMC.css">
+
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="logo" src="./Imagens/Spider System Transp.png" alt="Spider System">
+        <nav class="menu">
+            <ul class="menu__lista">
+                <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Nossos valores</a></li>
+                <li class="menu__item"><a class="menu__link" href="sites.html">Sites</a></li>
+                <li class="menu__item"><a class="menu__link ativo" href="sistemas.html">Sistemas</a></li>
+                <li class="menu__item"><a class="menu__link" href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="informacoes">
+        <section class="sobre">
+            <div class="titulo__principal">
+                <h1 class="titulo"> CALCULADORA DE IMC E CALORIAS</h1>
+                <p class="titulo__descricao">Aqui você encontra uma calculadora para medir seu IMC e quantas calorias pode ingerir conforme seu objetivo calorico.</p>
+            </div>
+        </section>
+        <div class="caculadora_imc">
+            <section class="formulario">
+                <h3 class="titulo_resultado">CONSULTA</h3>
+                <form id="imcForm">
+                    <label class="titulo_label" for="nome">Nome:</label>
+                    <input class="container_id" type="text" id="nome" name="nome" required>
+                    <div class="Form_Idade">
+                        <label class="titulo_label" for="idade">Idade:</label>
+                        <input class="container_id" type="number" id="idade" name="idade" min="1" required>
+
+                        <label class="titulo_label" for="altura">Altura:</label>
+                        <input class="container_id" type="number" id="altura" name="altura" step="0.01" min="0" required>
+
+                        <label class="titulo_label" for="peso">Peso:</label>
+                        <input class="container_id" type="number" id="peso" name="peso" step="0.01" min="0" required>
+                    </div>
+                    <label class="titulo_label" for="atividade">Nível de Atividade:</label>
+                    <select class="container_id" id="atividade" name="atividade" required>
+                        <option value="1.2">Sedentário (pouco ou nenhum exercício)</option>
+                        <option value="1.375">Levemente Ativo (exercício leve/dia)</option>
+                        <option value="1.55">Moderadamente Ativo (exercício moderado/dia)</option>
+                        <option value="1.725">Muito Ativo (exercício pesado/dia)</option>
+                        <option value="1.9">Super Ativo (exercício pesado e trabalho físico)</option>
+                    </select>
+
+                    <label class="titulo_label" for="genero">Gênero:</label>
+                    <section class="genero">
+                        <input type="radio" id="genero-masculino" name="genero" value="masculino" required>
+                        <label class="genero-masculino" for="genero-masculino">Masculino</label>
+                        <input type="radio" id="genero-feminino" name="genero" value="feminino" required>
+                        <label for="genero-feminino">Feminino</label>
+                    </section>
+
+                    <label class="titulo_label" for="meta">Objetivo:</label>
+                    <select class="container_id" id="meta" name="meta" required>
+                        <option value="emagrecer">Emagrecer</option>
+                        <option value="manter">Manter o Peso</option>
+                        <option value="engordar">Engordar</option>
+                    </select>
+
+                    <button class="botao_imc" type="submit">Calcular IMC e Calorias</button>
+                </form>
+
+                <section class="resultado">
+                    <h3 class="titulo_resultado">RESULTADO</h3>
+                    <div class="imc-info">
+                        <p class="imc-resultado"><span id="nomeResultado"></span></p>
+                    </div>
+                    <div class="imc-info">
+                        <p class="imc-dados">IMC: </p> 
+                        <p class="imc-resultado"><span id="imc"></span></p>
+                    </div> 
+                    <div class="imc-info">
+                        <p class="imc-dados">Peso Ideal: </p> 
+                        <p class="imc-resultado"><span id="pesoIdeal"></span></p>
+                    </div>
+                    <div class="imc-info">
+                        <p class="imc-dados">Necessidades Calóricas: </p> 
+                        <p class="imc-resultado"><span id="necessidadesCaloricas"></span></p>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </main>
+    <footer class="rodape">
+        <p class="copyright">&copy; Spider System - 2022</p>
+    </footer>
+    <script src="./java/IMC.js"></script>
+</body>
+</html>
