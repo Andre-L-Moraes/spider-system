@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,19 +13,40 @@
     <link rel="stylesheet" href="./assets/css/componentes/inputs.css">
     <link rel="stylesheet" href="./assets/css/componentes/botao.css">
     <link rel="stylesheet" href="./assets/css/cadastro_produto.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/cabecalho+menu.css">
+    <link rel="stylesheet" href="../css/rodape.css">
 </head>
 <body>
-    <header class="cabecalho container">
+    <header class="cabecalho">
+        <img class="logo" src="../Imagens/Spider System Transp.png" alt="Spider System">
+        <nav class="menu">
+            <ul class="menu__lista">
+                <li class="menu__item"><a class="menu__link" href="../index.html">Home</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Nossos valores</a></li>
+                <li class="menu__item"><a class="menu__link ativo" href="../sites.html">Sites</a></li>
+                <li class="menu__item"><a class="menu__link" href="../sistemas.html">Sistemas</a></li>
+                <li class="menu__item"><a class="menu__link" href="../cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="cabecalho_dog container">
         <img src="./assets/img/doguitoadm.svg" alt="Logo Doguito" class="cabecalho__logo">
         <nav>
             <ul class="cabecalho__lista-navegacao">
                 <li class="cabecalho__link"><a href="#">Dashboard</a></li>
-                <li class="cabecalho__link"><a href="#">Produtos</a></li>
-                <li class="cabecalho__link"><a href="lista_cliente.html">Clientes </a></li>
+                <li class="cabecalho__link"><a href="cadastro_produto.html">Produtos</a></li>
+                <li class="cabecalho__link"><a href="cadastro.html">Clientes </a></li>
                 <li class="cabecalho__link"><a href="#">Pets</a></li>
             </ul>
         </nav>
-    </header>
+    </section>
     <main class="container flex flex--centro flex--coluna">
         <section class="cartao cadastro">
             <h1 class="cartao__titulo">Cadastrar um produto</h1>
@@ -49,6 +70,9 @@
             </form>
         </section>
     </main>
+    <footer class="rodape">
+        <p class="copyright">&copy; Spider System - 2022</p>
+    </footer>
     <script src="./js/app.js" type="module"></script>
     <script src="https://github.com/codermarcos/simple-mask-money/releases/download/v3.0.0/simple-mask-money.js"></script>
 </body>
