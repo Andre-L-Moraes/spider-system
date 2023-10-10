@@ -50,6 +50,7 @@ body {
   padding: 0;
   color: #fff;
   text-align: center;
+  font-family: 'Kaushan Script', cursive; /*tipo de fonte*/
 }
 
 /* Estilos para os campos de entrada de usuário */
