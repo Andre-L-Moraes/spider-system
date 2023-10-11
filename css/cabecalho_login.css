@@ -1,0 +1,18 @@
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    background: var(--cor-fundo-cabecalho);
+    margin: 0 auto;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+}
+
+.logo {
+    width: 320px; /*largurado logo*/
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
