@@ -4,6 +4,8 @@
     justify-content: space-between; /* deixa o menu no canto direito */
     background: var(--cor-fundo-cabecalho); /*cor do fundo*/
     padding: 0 2rem 0 2rem; /*margem interna*/
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+	margin-bottom: 1rem;
 }
 
 .logo {

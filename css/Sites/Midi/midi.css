@@ -1,6 +1,5 @@
 main{
     align-items: center;  /*alinhar item*/
-    background-color: var(--cor-fundo-az-principal); /*cor de fundo*/
     display: flex; /*deixa flexcivel*/
     flex-direction: column; /*direção do elemento*/
     justify-content: center; 

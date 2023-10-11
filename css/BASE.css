@@ -14,11 +14,13 @@
     --sombra-box: 0 15px 25px rgba(0, 0, 0, .6)
 }
 body {
-	font-family: 'Montserrat', sans-serif;;
+	font-family: 'Montserrat', sans-serif;
+}
+.corpo{
+    background: var(--cor-fundo-az-principal)
 }
 .informacoes {
     color: var(--cor-texto-claro);
-    background: var(--cor-fundo-az-principal)
 }
 
 .sobre {
@@ -27,7 +29,6 @@ body {
 }
 
 .titulo__principal {
-    background: var(--cor-fundo-az-principal); /* cor do fundo*/
     padding: 2rem; /* margem interna*/
 }
 

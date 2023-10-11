@@ -15,38 +15,27 @@
     justify-content: space-between;
 }
 
-
-
-/* Definindo estilos para todo o HTML */
-html {
-  height: 100%;
-}
-
 /* Estilos para o corpo da página */
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  background: var(--cor-fundo-az-principal);
+  font-family: sans-serif; /*font utilizada*/
 }
 
 /* Estilos para a caixa de login */
 .login-box {
-  margin-top: 4rem;
-  width: 400px;
-  padding: 40px;
-  background: rgba(0, 0, 0, .5);
-  box-sizing: border-box;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
-  border-radius: 10px;
+  margin-top: 4rem; /*margem externa*/
+  width: 400px; /*largura*/
+  padding: 40px; /*autura*/
+  background: rgba(0, 0, 0, .5); /*cor fundo*/
+  box-sizing: border-box; /*tamanho da caixa*/
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .6); /*sombra*/
+  border-radius: 10px; /*raio da borda*/
 }
 
 /* Estilos para o título da caixa de login */
 h2 {
-  margin: 0 0 30px;
-  padding: 0;
-  color: #fff;
-  text-align: center;
+  margin-bottom: 2rem; /* margem externa*/
+  color: #fff; /* con da fonte*/
+  text-align: center; /* alinhamento do texto*/
   font-family: 'Kaushan Script', cursive; /*tipo de fonte*/
 }
 
@@ -57,71 +46,71 @@ h2 {
 
 input {
   /* Estilos para campos de entrada de texto */
-  width: 100%;
-  padding: 10px 0;
-  font-size: 16px;
-  color: #fff;
-  margin-bottom: 30px;
-  border: none;
-  border-bottom: 1px solid #fff;
+  width: 100%; /*largura*/
+  padding: 10px 0; /* margem interna*/
+  font-size: 16px; /*tamanho da fonte*/
+  color: #fff; /* cor da fonte*/
+  margin-bottom: 30px; /* margem externa*/
+  border: none; /* borda*/
+  border-bottom: 1px solid #fff; /* borda para baixo*/
   outline: none;
-  background: transparent;
+  background: transparent; /* fundo transparente*/
 }
 
 label {
   /* Estilos para rótulos dos campos de entrada de texto */
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 10px 0;
-  font-size: 16px;
-  color: #fff;
+  position: absolute; /*sobre no cartao*/
+  top: 0; /* coloca o titulo na medida informada*/
+  left: 0; /* coloca o titulo na medida informada*/
+  padding: 10px 0; /*margem interna*/
+  font-size: 16px; /*tamanho da fonte*/
+  color: #fff; /*cor da fonte*/
   pointer-events: none;
-  transition: .5s;
+  transition: .5s; /* tempo de transação para o "focus"*/
 }
 
 /* Estilos para a animação dos rótulos quando o campo está em foco ou preenchido */
 input:focus ~ label,
 input:valid ~ label {
-  top: -20px;
-  left: 0;
-  color: #db7171;
-  font-size: 12px;
+  top: -20px; /*sobe o texto*/
+  left: 0; /* fica na posição informada*/
+  color: #db7171; /* cor da fonte*/
+  font-size: 12px; /*tamanho da fonte*/
 }
 
 /* Estilos para links dentro da caixa de login */
 .botão_enviar {
   /* Estilos para links de ação, como "Entrar" ou "Registrar" */
-  position: relative;
+  position: relative; /*garante que a animação fica na tag*/
   display: inline-block;
-  padding: 10px 20px;
-  color: #db7171;
-  font-size: 16px;
-  text-decoration: none;
-  text-transform: uppercase;
-  overflow: hidden;
-  transition: .5s;
-  margin-top: 40px;
-  letter-spacing: 4px;
+  padding: 10px 20px; /*margem interna*/
+  color: #db7171; /*cor do botão*/
+  font-size: 16px; /*tamanho da fonte*/
+  text-decoration: none; /* tira o subrinhado do link*/
+  text-transform: uppercase;  /*coloca o texto em maiusculo*/
+  overflow: hidden; /* garante que a animação faça internamente na tag*/
+  transition: .5s; /* tempo de transação*/
+  margin-top: 40px; /*margem externa*/
+  letter-spacing: 4px; /*espaço entre as letras*/
 }
 
-/* Estilos de animação para o hover do link */
+/* Estilos de animação quando o mouse passa por cima do link */
 .botão_enviar:hover {
-  /* Estilos de animação quando o mouse passa por cima do link */
-  background: #db7171;
-  color: #fff;
-  border-radius: 5px;
+  background: #db7171; /* cor de fundo*/
+  color: #fff; /*cor da fonte*/
+  border-radius: 5px;/*raio da borda*/
+  /*sombra do botão*/
   box-shadow: 0 0 5px #db7171,
               0 0 25px #db7171,
               0 0 50px #db7171,
               0 0 100px #db7171;
 }
 
-/* Estilos para as linhas animadas dentro do link */
+/* Estilos para as linhas animadas dentro do link*/
 .botão_enviar span {
   position: absolute;
   display: block;
-}
+} 
 
 /* Estilos para a primeira linha animada */
 .botão_enviar span:nth-child(1) {
@@ -203,10 +192,10 @@ input:valid ~ label {
 
 @media (max-width: 700px) {
   .login-box {
-    padding: 20px;
-    width: 100%;
-    transform: none;
-    margin-top: 3rem;
-    box-shadow: none;
+    padding: 20px; /*margem interna*/
+    width: 100%; /*largura*/
+    transform: none; /*transformação*/
+    margin-top: 3rem; /*margem externa*/
+    box-shadow: none; /*sombra*/
   }
 }

@@ -8,8 +8,7 @@
     transition: all .2s ease-in-out; /*transação da cor + combinado com transform do hover*/
     text-decoration: none; /*tira o sublinhado do link*/
     text-align: center; /*alinhou o texto*/
-    margin: 1rem 0 1rem; /*margem externa*/
-    font-size: 1,2rem; /*tamanho da font*/
+    margin: 1rem 3rem; /*margem externa*/
     transition: 1s all; /*tempo de transição do mouse*/
 }
 .informacoes_botao:hover{
