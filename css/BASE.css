@@ -9,6 +9,9 @@
     --cor-texto-claro: #e1f6ff;
 
     --cor-fundo-cartao: #1f3d49;
+    --cor-cartão: rgba(0, 0, 0, .5);
+
+    --sombra-box: 0 15px 25px rgba(0, 0, 0, .6)
 }
 body {
 	font-family: 'Montserrat', sans-serif;;

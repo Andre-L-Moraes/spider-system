@@ -4,19 +4,22 @@
     align-items: center; /*alinhas os elementos*/
 }
 
+
 .cartao {
-    background-color: var(--cor-fundo-cartao); /*cor de fundo*/
+    background-color: var(--cor-cartão); /*cor de fundo*/
     border-radius: 10px; /*Borda aredondada*/
     color: var(--cor-texto-claro);   /*Cor da font*/
-    width: 100%; /*largura*/
     max-width: 45rem; /*largura max*/
     padding: 1.75rem; /*margnem interna*/
     box-sizing: border-box; /*borda*/
-    margin-bottom: 1rem; /*margem externa baixo*/
+    box-shadow: var(--sombra-box); /*sombra*/
+    margin-bottom: 2rem; /*margem externa baixo*/
 }
+
 .cartao__titulo {
     font-size: 28px; /*tamanho da font*/
     margin-bottom: 1rem; /*margem externa baixo*/
+    text-align: center;
 }
 
 .formulario {

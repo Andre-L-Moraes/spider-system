@@ -14,11 +14,12 @@
 }
 
 .serviço {
-    background: var(--cor-fundo-cartao); /* cor de fundo */
+    background: var(--cor-cartão); /* cor de fundo */
     border-radius: 7px; /*raio da borda*/
     text-align: center; /* texto alinhado */
     width: 25%; /*largura*/
     margin-top: 1rem; /*margem externa*/
+    box-shadow: var(--sombra-box);
 }   
 
 .serviço__conteudo {
