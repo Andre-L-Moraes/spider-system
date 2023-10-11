@@ -27,7 +27,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: linear-gradient(#141e30, #243b55);
+  background: var(--cor-fundo-az-principal);
 }
 
 /* Estilos para a caixa de login */
@@ -45,7 +45,7 @@ body {
 }
 
 /* Estilos para o título da caixa de login */
-.login-box h2 {
+h2 {
   margin: 0 0 30px;
   padding: 0;
   color: #fff;
@@ -54,11 +54,11 @@ body {
 }
 
 /* Estilos para os campos de entrada de usuário */
-.login-box .user-box {
+.user-box {
   position: relative;
 }
 
-.login-box .user-box input {
+input {
   /* Estilos para campos de entrada de texto */
   width: 100%;
   padding: 10px 0;
@@ -71,7 +71,7 @@ body {
   background: transparent;
 }
 
-.login-box .user-box label {
+label {
   /* Estilos para rótulos dos campos de entrada de texto */
   position: absolute;
   top: 0;
@@ -84,8 +84,8 @@ body {
 }
 
 /* Estilos para a animação dos rótulos quando o campo está em foco ou preenchido */
-.login-box .user-box input:focus ~ label,
-.login-box .user-box input:valid ~ label {
+input:focus ~ label,
+input:valid ~ label {
   top: -20px;
   left: 0;
   color: #db7171;
@@ -93,7 +93,7 @@ body {
 }
 
 /* Estilos para links dentro da caixa de login */
-.login-box form .botão_enviar {
+.botão_enviar {
   /* Estilos para links de ação, como "Entrar" ou "Registrar" */
   position: relative;
   display: inline-block;
@@ -109,7 +109,7 @@ body {
 }
 
 /* Estilos de animação para o hover do link */
-.login-box .botão_enviar:hover {
+.botão_enviar:hover {
   /* Estilos de animação quando o mouse passa por cima do link */
   background: #db7171;
   color: #fff;
@@ -121,13 +121,13 @@ body {
 }
 
 /* Estilos para as linhas animadas dentro do link */
-.login-box .botão_enviar span {
+.botão_enviar span {
   position: absolute;
   display: block;
 }
 
 /* Estilos para a primeira linha animada */
-.login-box .botão_enviar span:nth-child(1) {
+.botão_enviar span:nth-child(1) {
   top: 0;
   left: -100%;
   width: 100%;
@@ -147,7 +147,7 @@ body {
 }
 
 /* Repetindo o mesmo padrão para as outras linhas animadas */
-.login-box .botão_enviar span:nth-child(2) {
+.botão_enviar span:nth-child(2) {
   top: -100%;
   right: 0;
   width: 2px;
@@ -166,7 +166,7 @@ body {
   }
 }
 
-.login-box .botão_enviar span:nth-child(3) {
+.botão_enviar span:nth-child(3) {
   bottom: 0;
   right: -100%;
   width: 100%;
@@ -185,7 +185,7 @@ body {
   }
 }
 
-.login-box .botão_enviar span:nth-child(4) {
+.botão_enviar span:nth-child(4) {
   bottom: -100%;
   left: 0;
   width: 2px;
@@ -201,5 +201,22 @@ body {
   }
   50%, 100% {
     bottom: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .botão_login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } 
+  .login-box {
+    position: initial;
+    top: 0;
+    left: 0;  
+    width: auto;
+    transform: none;
+    margin-top: 3rem;
+    box-shadow: none;
   }
 }
