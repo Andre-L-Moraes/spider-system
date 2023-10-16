@@ -62,3 +62,6 @@
     font-weight: 1; /*negrito da font*/
     font-size: 1rem; /*tamanho da font*/
 }
+.link_texto{
+    color: var(--cor-texto-claro);
+}
