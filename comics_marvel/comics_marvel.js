@@ -11,7 +11,7 @@ function debounce(func, delay) {
 const marvelApiKey = '6c58873b283faec8811c4118bd20cc1a';
 const privateKey = '030b831175b81344b404ed9a9dfd1a8d53ee5a21';
 const hash = 'f1675e47e1b76518ffa10dd10b106ea9';
-const limit = 100
+const limit = 20
 const marvelURL = `https://gateway.marvel.com:443/v1/public/characters?limit=${limit}&apikey=${marvelApiKey}&ts=1&hash=${hash}`
 
 
