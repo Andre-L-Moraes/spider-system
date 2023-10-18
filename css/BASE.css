@@ -17,7 +17,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 .corpo{
-    background: var(--cor-fundo-az-principal)
+    background: var(--cor-fundo-az-principal);
 }
 .informacoes {
     color: var(--cor-texto-claro);
