@@ -3,7 +3,7 @@
     align-items: center; /*centraliza a lista */
     justify-content: space-between; /* deixa o menu no canto direito */
     background: var(--cor-fundo-cabecalho); /*cor do fundo*/
-    padding: 0 2rem 0 2rem; /*margem interna*/
+    padding: 0 1rem 0 1rem; /*margem interna*/
     box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
 	margin-bottom: 1rem;
 }
@@ -43,7 +43,7 @@
 	text-transform: uppercase;
 	overflow: hidden;
 	transition: .5s;
-	margin-left: 10px;
+	margin: 0 10px 0 10px;
 	letter-spacing: 4px;
 	font-family: 'Kaushan Script', cursive;	
   }
