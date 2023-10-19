@@ -10,8 +10,10 @@
 
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/cabecalho+menu.css">
-    <link rel="stylesheet" href="./css/rodape.css"> 
+    <link rel="stylesheet" href="./css/cabecalho.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/botao_Login.css">
+    <link rel="stylesheet" href="./css/rodape.css">
 
     <script src="java/Imagem Cachorro/img-cachorro.js"></script>
     <link rel="stylesheet" href="./css/Sites/Img-Cachorro/imagem-cachorro.css"> 
@@ -21,15 +23,34 @@
 <body class="corpo">
     <header class="cabecalho">
         <img class="logo" src="./Imagens/Spider System Transp.png" alt="Spider System">
-        <nav class="menu">
-            <ul class="menu__lista">
-                <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Nossos valores</a></li>
-                <li class="menu__item"><a class="menu__link" href="sites.html">Sites</a></li>
-                <li class="menu__item"><a class="menu__link ativo" href="sistemas.html">Sistemas</a></li>
-                <li class="menu__item"><a class="menu__link" href="cadastro.html">Cadastro</a></li>
-            </ul>
-        </nav>
+		<ul class="menu__lista cf">
+			<li class="menu__item" ><a class="menu__link" href="index.html">Home</a></li>
+			<li class="menu__item" ><a class="menu__link" href="#">Valores</a></li>
+			<li class="menu__item" ><a class="menu__link" href="sites.html">Sites</a>
+				<ul class="submenu">
+                    <li><a href="./doguito/cadastro.html">PETSHOP</a></li>
+                    <li><a href="Barbearia-web.html">BARBEARIA</a></li>
+                    <li><a href="alurinha.html">ALURINHA</a></li>
+                    <li><a href="alura_store.html">ALURA STORE</a></li>
+                    <li><a href="frutas-e-frutos.html">FRUTAS E FRUTOS</a></li>
+                    <li><a href="apeperia.html">APEPERIA</a></li>
+                </ul>
+			</li>
+			<li class="menu__item ativo" ><a class="menu__link" href="sistemas.html">Sistemas</a></li>
+			<li class="menu__item" ><a class="menu__link" href="cadastro.html">Contato</a></li>
+			<div class="animation start-home"></div>
+		</ul>
+		<div>
+			<li class="menu__item">
+				<a class="botao_login" href="Login.html">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					Login
+				</a>
+			</li>
+		</div>
     </header>
     <main class="informacoes">
         <section class="sobre">

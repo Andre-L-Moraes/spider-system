@@ -226,3 +226,8 @@
         background-color: var(--cor-fundo-cartao);
     }
 }
+/* faz rolagem suave para levar em uma tag da pagina - usado na html sistemas*/
+html {
+  scroll-behavior: smooth;
+}
+

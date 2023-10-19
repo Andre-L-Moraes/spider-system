@@ -1,0 +1,24 @@
+.cabecalho {
+    display: flex; /*deixa os itens flexivel*/
+    align-items: center; /*centraliza a lista */
+    justify-content: space-between; /* deixa o menu no canto direito */
+    background: var(--cor-fundo-cabecalho); /*cor do fundo*/
+    padding: 0 1rem 0 1rem; /*margem interna*/
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+	margin-bottom: 1rem;
+    list-style: none;
+}
+
+.logo {
+    width: 320px; /*largurado logo*/
+}
+@media (max-width: 800px) {
+    .cabecalho {
+        flex-direction: column;
+        padding: 10px;
+        align-items: initial;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+}
