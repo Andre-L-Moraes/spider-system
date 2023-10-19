@@ -15,21 +15,31 @@
 
     <link rel="stylesheet" href="./css/sistemas-link/sistemas_link.css">
     <link rel="stylesheet" href="./css/sistemas-link/sistemas_botao.css">
-    <link rel="stylesheet" href="./menu2io/menu2.css">
+    
+    <link rel="stylesheet" href="./menu2io/menu4.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
 <body class="corpo">
-	<header class="cabecalho">
-		<img class="logo" src="./Imagens/Spider System Transp.png" alt="Spider System">
-		
-		<nav class="menu_move">
-			<a class="menu_link" href="./index.html">Home</a>
-			<a class="menu_link" href="#">Valores</a>
-			<a class="menu_link" href="./sites.html">Sites</a>
-			<a class="menu_link ativo" href="./sistemas.html">Sistemas</a>
-			<a class="menu_link" href="./cadastro.html">Contato</a>
+    <header class="cabecalho">
+        <img class="logo" src="./Imagens/Spider System Transp.png" alt="Spider System">
+		<ul class="menu_move cf">
+			<li class="menu_link" ><a class="menu_link3" href="index.html">Home</a></li>
+			<li class="menu_link" ><a class="menu_link3" href="#">Valores</a></li>
+			<li class="menu_link" ><a class="menu_link3" href="sites.html">Sites</a>
+				<ul class="submenu">
+                    <li><a href="./doguito/cadastro.html">PETSHOP</a></li>
+                    <li><a href="Barbearia-web.html">BARBEARIA</a></li>
+                    <li><a href="alurinha.html">ALURINHA</a></li>
+                    <li><a href="alura_store.html">ALURA STORE</a></li>
+                    <li><a href="frutas-e-frutos.html">FRUTAS E FRUTOS</a></li>
+                    <li><a href="apeperia.html">APEPERIA</a></li>
+                </ul>
+			</li>
+			<li class="menu_link ativo" ><a class="menu_link3" href="sistemas.html">Sistemas</a></li>
+			<li class="menu_link" ><a class="menu_link3" href="cadastro.html">Contato</a></li>
 			<div class="animation start-home"></div>
-		</nav>
+		</ul>
 		<div>
 			<li class="menu__item">
 				<a class="botão_enviar" href="Login.html">
@@ -41,7 +51,7 @@
 				</a>
 			</li>
 		</div>
-	</header>
+    </header>
     <main class="informacoes">
         <section class="sobre">
             <div class="titulo__principal">

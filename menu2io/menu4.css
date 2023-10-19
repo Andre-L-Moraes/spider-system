@@ -83,7 +83,7 @@
 	left: 420px;
 	background-color: var(--cor-botao-vm);
 }
-/*teste menu3*/
+/*Fazer funcionar o submenu*/
 .cf:before,
 .cf:after {
   content: " ";
@@ -112,7 +112,7 @@
 
 .submenu {
     position: absolute;
-    width: 200px;
+    width: 220px;
     left: 50%;
     margin-left: -100px;
   }
@@ -166,30 +166,40 @@
         left: -50%;
         transform: skewX(25deg) rotate(3deg);
       }
-    /* Show dropdown */
-	.submenu, .submenu li {
-		opacity: 0;
-		visibility: hidden;
-	  }
-	  
-	  .submenu li {
-		transition: 0.2s ease transform;
-	  }
-	  
-	  .menu_move > li:hover .submenu, .menu_move > li:hover .submenu li {
-		opacity: 1;
-		visibility: visible;
-	  }
-	  
-	  .menu_move > li:hover .submenu li:nth-child(even) {
-		transform: translateX(15px);
-	  }
-	  
-	  .menu_move > li:hover .submenu li:nth-child(odd) {
-		transform: translateX(-15px);
-	  }
+/* Show Submenu */
+  /* Esconda o submenu por padrão */
+  .submenu {
+    opacity: 0;
+    visibility: hidden;
+  }
 
-/* fim do teste menu 3*/
+  /* Mostra o submenu apenas quando o item de menu "Sites" ativo estiver ativo e o mouse passar sobre ele */
+  .menu_link.ativo:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .menu_link.ativo:hover .submenu li:nth-child(even) {
+    transform: translateX(15px);
+  }
+
+  .menu_link.ativo:hover .submenu li:nth-child(odd) {
+    transform: translateX(-15px);
+  }
+/* fim do show submenu*/
+
+/* vai aparecer com um clique - o resto do cod. no "menu4.'js'" */
+    /*.submenu {
+      display: none; /* Oculta o submenu por padrão */
+      /* Outras regras de estilo para o submenu *//*
+    }
+    
+    .menu_move.clicado .submenu {
+      display: block; /* Mostra o submenu quando o menu é clicado *//*
+    }
+/* fim aparecer com um clique*/    
+
+/* fim do submenu*/
 
 
 @media (max-width: 800px) {

@@ -17,19 +17,42 @@
     <link rel="stylesheet" href="./css/site-link/site_link.css">
     <link rel="stylesheet" href="./css/site-link/sites_botao.css">
 
+    <link rel="stylesheet" href="./menu2io/menu4.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 <body class="corpo">
     <header class="cabecalho">
         <img class="logo" src="./Imagens/Spider System Transp.png" alt="Spider System">
-        <nav class="menu">
-            <ul class="menu__lista">
-                <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Nossos valores</a></li>
-                <li class="menu__item"><a class="menu__link ativo" href="sites.html">Sites</a></li>
-                <li class="menu__item"><a class="menu__link" href="sistemas.html">Sistemas</a></li>
-                <li class="menu__item"><a class="menu__link" href="cadastro.html">Cadastro</a></li>
-            </ul>
-        </nav>
+		<ul class="menu_move cf">
+			<li class="menu_link" ><a class="menu_link3" href="index.html">Home</a></li>
+			<li class="menu_link" ><a class="menu_link3" href="#">Valores</a></li>
+			<li class="menu_link ativo" >
+                <a class="menu_link3" href="sites.html">Sites</a>
+				<ul class="submenu">
+                    <li><a href="./doguito/cadastro.html">PETSHOP</a></li>
+                    <li><a href="Barbearia-web.html">BARBEARIA</a></li>
+                    <li><a href="alurinha.html">ALURINHA</a></li>
+                    <li><a href="alura_store.html">ALURA STORE</a></li>
+                    <li><a href="frutas-e-frutos.html">FRUTAS E FRUTOS</a></li>
+                    <li><a href="apeperia.html">APEPERIA</a></li>
+                </ul>
+			</li>
+			<li class="menu_link" ><a class="menu_link3" href="sistemas.html">Sistemas</a></li>
+			<li class="menu_link" ><a class="menu_link3" href="cadastro.html">Contato</a></li>
+			<div class="animation start-home"></div>
+		</ul>
+		<div>
+			<li class="menu__item">
+				<a class="botão_enviar" href="Login.html">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					Login
+				</a>
+			</li>
+		</div>
     </header>
     <main class="informacoes">
         <section class="sobre">
@@ -91,4 +114,5 @@
     <footer class="rodape">
         <p class="copyright">&copy; Spider System - 2022</p>
     </footer>
+    <!--<script src="./menu2io/menu4.js"></script>-->
 </html>
