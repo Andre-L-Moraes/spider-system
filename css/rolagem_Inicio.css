@@ -1,0 +1,21 @@
+    /* Estilo para o botão de voltar ao início */
+    #botao-ao-topo {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: var(--cor-fundo-cartao);
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+  
+      #botao-ao-topo:hover {
+        background-color: var(--cor-botao-vm);
+      }
+  
+      #icone-seta {
+        font-size: 30px; /* Tamanho do ícone */
+        display: inline-block;
+      }

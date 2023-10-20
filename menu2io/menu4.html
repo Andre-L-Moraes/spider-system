@@ -13,11 +13,52 @@
     <link rel="stylesheet" href="../css/cabecalho.css">
     <link rel="stylesheet" href="../css/botao_Login.css">
 
+	<link rel="stylesheet" href="../css/site-link/site_link.css">
+    <link rel="stylesheet" href="../css/site-link/sites_botao.css">
+
 	<link rel="stylesheet" href="./menu4.css">
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+	  /* Estilo para o botão de voltar ao início */
+	  #botao-ao-topo {
+		display: none;
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		background-color: #333;
+		color: #fff;
+		padding: 10px;
+		border-radius: 5px;
+		text-decoration: none;
+	  }
+  
+	  #botao-ao-topo:hover {
+		background-color: #555;
+	  }
+  
+	  #icone-seta {
+		font-size: 20px; /* Tamanho do ícone */
+		display: inline-block;
+	  }
+	</style>
+
+
 </head>
 <body class="corpo">
+
+  <!-- Conteúdo da página aqui -->
+  <div> <!-- Conteúdo longo para testar a rolagem -->
+    <a href="#" id="botao-ao-topo">
+      <i id="icone-seta" class="fa fa-arrow-circle-up"></i>
+    </a>
+  </div>
+
+  <!-- âncora no início da página -->
+  <a id="topo"></a>
+
     <header class="cabecalho">
         <img class="logo" src="../Imagens/Spider System Transp.png" alt="Spider System">
 		<ul class="menu__lista cf">
@@ -47,7 +88,177 @@
 			</li>
 		</div>
     </header>
+	<main class="informacoes">
+        <section class="sobre">
+            <div class="titulo__principal">
+                <h1 class="titulo"> SISTEMA E SITES CRIADOS NAS AULAS</h1>
+                <p class="titulo__descricao">Aqui você encontra todos os nossos sistemas e sites que foi criados nas aulas </p>
+            </div>
+        </section>  
+        <section class="site_container">
+            <h2 class="site_titulo">SITES CRIADOS</h2>
+            <p class="site_descricao">Esses são sites que utiliza somente HTML e CSS.</p>
+            <ul class="site_cartoes">
+                <li class="site_cartao">
+                    <h3 class="site_titulo_cartao">PETSHOP</h3>
+                    <article class="site_conteudo">
+                        <p class="site_texto">Esse site tem quatro paginas (duas do menu) e duas fora depois de preencher o cadastro e tem javascript bugado.</p>
+                    </article>
+                    <a href="./doguito/cadastro.html" class="informacoes_botao">ACESSE AQUI</a>
+                </li>
+                <li class="site_cartao">    
+                    <h3 class="site_titulo_cartao">BARBEARIA</h3>
+                    <article class="site_conteudo">
+                        <p class="site_texto">Esse site de barbearia está funcionando todas as paginas para navegar.</p>
+                    </article>
+                    <a href="Barbearia-web.html" class="informacoes_botao">ACESSE AQUI</a>
+                </li>
+                <li class="site_cartao">
+                    <h3 class="site_titulo_cartao">ALURINHA</h3>
+                    <article class="site_conteudo">
+                        <p class="site_texto">Esse site tem somente uma pagina, onde aprendi a utilizar o display: flex do css.</p>
+                    </article>
+                    <a href="alurinha.html" class="informacoes_botao">ACESSE AQUI</a>
+                </li>
+                <li class="site_cartao">
+                    <h3 class="site_titulo_cartao">ALURA STORE</h3>
+                    <article class="site_conteudo">
+                        <p class="site_texto">Esse site é de jogos com uma pagina, onde aprendi a utilizar a divisão em colulas.</p>
+                    </article>
+                    <a href="alura_store.html" class="informacoes_botao">ACESSE AQUI</a>
+                </li>
+                <li class="site_cartao">
+                    <h3 class="site_titulo_cartao">FRUTAS E FRUTOS</h3>
+                    <article class="site_conteudo">
+                        <p class="site_texto">Esse site tem uma só pagina, onde aprendi como usar imagens no site e cartão com display: flex.</p>
+                    </article>
+                    <a href="frutas-e-frutos.html" class="informacoes_botao">ACESSE AQUI</a>
+                </li>
+                <li class="site_cartao">
+                    <h3 class="site_titulo_cartao">APEPERIA</h3>
+                    <article class="site_conteudo">
+                        <p class="site_texto">Esse site tem uma pagina, onde aprendi a fazer copiando de um projeto (imagem).   </p>
+                    </article>
+                    <a href="apeperia.html" class="informacoes_botao">ACESSE AQUI</a>
+                </li>
+            </ul>
+        </section>
+		<section class="site_container">
+            <h2 class="site_titulo">SITES CRIADOS</h2>
+            <p class="site_descricao">Esses são sites que utiliza somente HTML e CSS.</p>
+            <ul class="site_cartoes">
+                <li class="site_cartao">
+                    <h3 class="site_titulo_cartao">PETSHOP</h3>
+                    <article class="site_conteudo">
+                        <p class="site_texto">Esse site tem quatro paginas (duas do menu) e duas fora depois de preencher o cadastro e tem javascript bugado.</p>
+                    </article>
+                    <a href="./doguito/cadastro.html" class="informacoes_botao">ACESSE AQUI</a>
+                </li>
+                <li class="site_cartao">    
+                    <h3 class="site_titulo_cartao">BARBEARIA</h3>
+                    <article class="site_conteudo">
+                        <p class="site_texto">Esse site de barbearia está funcionando todas as paginas para navegar.</p>
+                    </article>
+                    <a href="Barbearia-web.html" class="informacoes_botao">ACESSE AQUI</a>
+                </li>
+                <li class="site_cartao">
+                    <h3 class="site_titulo_cartao">ALURINHA</h3>
+                    <article class="site_conteudo">
+                        <p class="site_texto">Esse site tem somente uma pagina, onde aprendi a utilizar o display: flex do css.</p>
+                    </article>
+                    <a href="alurinha.html" class="informacoes_botao">ACESSE AQUI</a>
+                </li>
+                <li class="site_cartao">
+                    <h3 class="site_titulo_cartao">ALURA STORE</h3>
+                    <article class="site_conteudo">
+                        <p class="site_texto">Esse site é de jogos com uma pagina, onde aprendi a utilizar a divisão em colulas.</p>
+                    </article>
+                    <a href="alura_store.html" class="informacoes_botao">ACESSE AQUI</a>
+                </li>
+                <li class="site_cartao">
+                    <h3 class="site_titulo_cartao">FRUTAS E FRUTOS</h3>
+                    <article class="site_conteudo">
+                        <p class="site_texto">Esse site tem uma só pagina, onde aprendi como usar imagens no site e cartão com display: flex.</p>
+                    </article>
+                    <a href="frutas-e-frutos.html" class="informacoes_botao">ACESSE AQUI</a>
+                </li>
+                <li class="site_cartao">
+                    <h3 class="site_titulo_cartao">APEPERIA</h3>
+                    <article class="site_conteudo">
+                        <p class="site_texto">Esse site tem uma pagina, onde aprendi a fazer copiando de um projeto (imagem).   </p>
+                    </article>
+                    <a href="apeperia.html" class="informacoes_botao">ACESSE AQUI</a>
+                </li>
+            </ul>
+        </section>
+		<section class="site_container">
+            <h2 class="site_titulo">SITES CRIADOS</h2>
+            <p class="site_descricao">Esses são sites que utiliza somente HTML e CSS.</p>
+            <ul class="site_cartoes">
+                <li class="site_cartao">
+                    <h3 class="site_titulo_cartao">PETSHOP</h3>
+                    <article class="site_conteudo">
+                        <p class="site_texto">Esse site tem quatro paginas (duas do menu) e duas fora depois de preencher o cadastro e tem javascript bugado.</p>
+                    </article>
+                    <a href="./doguito/cadastro.html" class="informacoes_botao">ACESSE AQUI</a>
+                </li>
+                <li class="site_cartao">    
+                    <h3 class="site_titulo_cartao">BARBEARIA</h3>
+                    <article class="site_conteudo">
+                        <p class="site_texto">Esse site de barbearia está funcionando todas as paginas para navegar.</p>
+                    </article>
+                    <a href="Barbearia-web.html" class="informacoes_botao">ACESSE AQUI</a>
+                </li>
+                <li class="site_cartao">
+                    <h3 class="site_titulo_cartao">ALURINHA</h3>
+                    <article class="site_conteudo">
+                        <p class="site_texto">Esse site tem somente uma pagina, onde aprendi a utilizar o display: flex do css.</p>
+                    </article>
+                    <a href="alurinha.html" class="informacoes_botao">ACESSE AQUI</a>
+                </li>
+                <li class="site_cartao">
+                    <h3 class="site_titulo_cartao">ALURA STORE</h3>
+                    <article class="site_conteudo">
+                        <p class="site_texto">Esse site é de jogos com uma pagina, onde aprendi a utilizar a divisão em colulas.</p>
+                    </article>
+                    <a href="alura_store.html" class="informacoes_botao">ACESSE AQUI</a>
+                </li>
+                <li class="site_cartao">
+                    <h3 class="site_titulo_cartao">FRUTAS E FRUTOS</h3>
+                    <article class="site_conteudo">
+                        <p class="site_texto">Esse site tem uma só pagina, onde aprendi como usar imagens no site e cartão com display: flex.</p>
+                    </article>
+                    <a href="frutas-e-frutos.html" class="informacoes_botao">ACESSE AQUI</a>
+                </li>
+                <li class="site_cartao">
+                    <h3 class="site_titulo_cartao">APEPERIA</h3>
+                    <article class="site_conteudo">
+                        <p class="site_texto">Esse site tem uma pagina, onde aprendi a fazer copiando de um projeto (imagem).   </p>
+                    </article>
+                    <a href="apeperia.html" class="informacoes_botao">ACESSE AQUI</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+	<a id="topo"></a> <!-- âncora no início da página -->
 </body>
+<script>
+    // Adicione um evento de rolagem para mostrar/ocultar o botão "Voltar ao Início"
+    window.addEventListener('scroll', function() {
+      var button = document.getElementById('botao-ao-topo');
+      if (window.scrollY > 300) {
+        button.style.display = 'block';
+      } else {
+        button.style.display = 'none';
+      }
+    });
+
+    // Adicione uma função para rolar suavemente ao topo
+    document.getElementById('botao-ao-topo').addEventListener('click', function(e) {
+      e.preventDefault(); // Impedir o comportamento padrão do link
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
 <script src="./menu4.js"></script>
 
 </html>
