@@ -1,0 +1,141 @@
+.cnpj-bloco{
+    background-color: var(--cor-fundo-cabecalho);
+    padding-bottom: 1rem;
+}
+.cnpj-cartao{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 9rem 1rem 9rem;
+    background-color: var(--cor-fundo-cartao);
+    border-radius: 5px;
+
+}
+.cnpj-info {
+    margin: 1rem;
+}
+.cnpj-dados {
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    font-weight: 700;
+}
+.cnpj-resultado{
+    background-color: white;
+    color: black;
+    border-radius: 2px;
+    height: 20px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+.Titulo_bloco{
+    min-width: -webkit-fill-available;
+    padding: 1rem;
+    font-size: 21px;
+}
+.fa{
+    margin-right: 10px;
+}
+.CEP{
+    min-width: 90px;
+}
+.Logradouro{
+    min-width: 300px;
+}
+.UF{
+    min-width: 40px;
+}
+.Bairro{
+    min-width: 200px;
+}
+.Municipio {
+    min-width: 200px;
+}
+.cnpj{
+    min-width: 130px;
+}
+.Razao_Social{
+    min-width: 620px;
+}
+.Nome_Fantasia{
+    min-width: 470px;
+}
+.Porte{
+    min-width: 240px;
+}
+.Descricao{
+    min-width: 998px;
+}
+.Telefone{
+    min-width: 130px;
+}
+
+.Socio {
+    min-width: 430px;
+}
+.Qualificacao{
+    min-width: 230px;
+}
+.FaixaEtaria{
+    min-width: 200px;
+}
+
+
+
+@media (max-width: 1025px) {
+    .cnpj-cartao{
+        display: flex;
+        align-content: space-around;
+        align-items: flex-start;
+    }
+    .Logradouro{
+        min-width: 280px;
+    }
+    .Razao_Social{
+        min-width: 650px;    
+    }
+    .Descricao{
+        min-width: 650px;
+        height: 60px;
+    }
+    .Nome_Fantasia{
+        min-width: 650px;
+    }
+    .Porte{
+        min-width: 350px;
+    }
+}
+@media (max-width: 800px) {
+    .cnpj-cartao{
+        display: flex;
+        margin: 0 0;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .Logradouro{
+        min-width: 200px;
+    }
+    .Razao_Social{
+        min-width: initial;
+        height: 90px;
+    }
+    .Nome_Fantasia{
+        min-width: initial;
+        height: 90px;
+    }
+    .Descricao{
+        min-width: initial;
+        height: 90px;
+    }
+    .Porte{
+        min-width: initial;
+    }
+    .Socio {
+        min-width: initial;
+    }
+    .Qualificacao{
+        min-width: initial;
+    }
+    .FaixaEtaria{
+        min-width: initial;
+    }
+}

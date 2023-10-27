@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/cabecalho.css">
     <link rel="stylesheet" href="./css/menu.css">
@@ -16,6 +17,9 @@
 
     <link rel="stylesheet" href="./css/Sistemas/CNPJ/botao-cnpj.css">
     <link rel="stylesheet" href="./css/Sistemas/CNPJ/cnpj-direto.css">
+    <link rel="stylesheet" href="./css/Sistemas/CNPJ/cnpj-bloco.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="corpo">
     <header class="cabecalho">
@@ -60,6 +64,106 @@
             <h2 class="cnpj_titulo">Insira o numero do CNPJ sem (-)</h2>
             <input id="cnpj" name="cnpj" type="text" placeholder="Digite apenas numeros">
             <button class="botão_cnpj" onclick="consultarCNPJ()">Consulta</button>    
+        </section>
+        <section class="cnpj-bloco">
+            <div class="cnpj-cartao">
+                <h3 class="Titulo_bloco"><i class="fa fa-briefcase"></i>Dados Cadastrais</h3>
+                <div class="cnpj-info">
+                    <p class="cnpj-dados">CNPJ:</p> 
+                    <p class="cnpj-resultado cnpj"><span id="cnpj2"></span></p>
+                </div>
+                <div class="cnpj-info">
+                    <p class="cnpj-dados">Razao Social: </p> 
+                    <p class="cnpj-resultado Razao_Social"><span id="Razao_Social"></span></p>
+                </div> 
+                <div class="cnpj-info">
+                    <p class="cnpj-dados">Situacao Cadastral: </p> 
+                    <p class="cnpj-resultado Situacao_Cadastral"><span id="Situacao_Cadastral"></span></p>
+                </div>
+                <div class="cnpj-info">
+                    <p class="cnpj-dados">Data Situacao Cadastral: </p> 
+                    <p class="cnpj-resultado Data_Cadastral"><span id="Data_Cadastral"></span></p>
+                </div>
+                <div class="cnpj-info">
+                    <p class="cnpj-dados">Nome Fantasia: </p> 
+                    <p class="cnpj-resultado Nome_Fantasia"><span id="Nome_Fantasia"></span></p>
+                </div>
+                <div class="cnpj-info">
+                    <p class="cnpj-dados">Porte: </p> 
+                    <p class="cnpj-resultado Porte"><span id="Porte"></span></p>
+                </div> 
+            </div>
+            <div class="cnpj-cartao">
+                <h3 class="Titulo_bloco"><i class="	fa fa-check-square-o"></i>Atividade Econômica</h3>
+                <div class="cnpj-info">
+                    <p class="cnpj-dados">CNAE Fiscal: </p> 
+                    <p class="cnpj-resultado numeroCNAE"><span id="numeroCNAE"></span></p>
+                </div> 
+                <div class="cnpj-info">
+                    <p class="cnpj-dados">CNAE Fiscal Descrição: </p> 
+                    <p class="cnpj-resultado Descricao"><span id="Descricao"></span></p>
+                </div> 
+            </div>
+            <div class="cnpj-cartao">
+                <h3 class="Titulo_bloco"><i class="fa fa-map-marker"></i>Localização e contato</h3>
+                <div class="cnpj-info">
+                    <p class="cnpj-dados">Logradouro: </p> 
+                    <p class="cnpj-resultado Logradouro"><span id="Logradouro"></span></p>
+                </div> 
+                <div class="cnpj-info">
+                    <p class="cnpj-dados">Numero: </p> 
+                    <p class="cnpj-resultado Numero"><span id="Numero"></span></p>
+                </div> 
+                <div class="cnpj-info">
+                    <p class="cnpj-dados">Bairro: </p> 
+                    <p class="cnpj-resultado Bairro"><span id="Bairro"></span></p>
+                </div> 
+                <div class="cnpj-info">
+                    <p class="cnpj-dados">CEP: </p> 
+                    <p class="cnpj-resultado CEP"><span id="CEP"></span></p>
+                </div> 
+                <div class="cnpj-info">
+                    <p class="cnpj-dados">UF: </p> 
+                    <p class="cnpj-resultado UF"><span id="UF"></span></p>
+                </div> 
+                <div class="cnpj-info">
+                    <p class="cnpj-dados">Municipio: </p> 
+                    <p class="cnpj-resultado Municipio"><span id="Municipio"></span></p>
+                </div> 
+                <div class="cnpj-info">
+                    <p class="cnpj-dados">Telefone: </p> 
+                    <p class="cnpj-resultado Telefone"><span id="Telefone"></span></p>
+                </div> 
+            </div>     
+            <div class="cnpj-cartao">
+                <h3 class="Titulo_bloco"><i class="fa fa-users"></i>Socios</h3>
+                <div class="cnpj-info">
+                    <p class="cnpj-dados">Nome do Sócio: </p> 
+                    <p class="cnpj-resultado Socio"><span id="Socio1"></span></p>
+                </div> 
+                <div class="cnpj-info">
+                    <p class="cnpj-dados">Qualificação do Sócio: </p> 
+                    <p class="cnpj-resultado Qualificacao"><span id="Qualificacao1"></span></p>
+                </div> 
+                <div class="cnpj-info">
+                    <p class="cnpj-dados">Faixa Etária: </p> 
+                    <p class="cnpj-resultado FaixaEtaria"><span id="FaixaEtaria1"></span></p>
+                </div> 
+                <div class="cnpj-info">
+                    <p class="cnpj-dados">Nome do Sócio: </p> 
+                    <p class="cnpj-resultado Socio"><span id="Socio2"></span></p>
+                </div> 
+                <div class="cnpj-info">
+                    <p class="cnpj-dados">Qualificação do Sócio: </p> 
+                    <p class="cnpj-resultado Qualificacao"><span id="Qualificacao2"></span></p>
+                </div> 
+                <div class="cnpj-info">
+                    <p class="cnpj-dados">Faixa Etária: </p> 
+                    <p class="cnpj-resultado FaixaEtaria"><span id="FaixaEtaria2"></span></p>
+                </div> 
+            </div>            
+        </section>
+        <section class="cnpj_direto">
             <div class="cnpj_resultado_direto">
                 <h3 class="cnpj_titulo2">Resultado</h3>
                 <p id="resultado"></p>
