@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/Login.css">
     <link rel="stylesheet" href="./css/cabecalho_login.css">
+
+    <link rel="stylesheet" href="./css/style_Aranha.css" type="text/css" media="screen, projection" />
+	<script type="text/javascript" src="./Java/Login/verlet-1.0.0.js"></script>
+	<script src="./Java/Login/webSpiderAni.js"></script>
+
 </head>
 <body class="corpo">
     <header class="cabecalho">
@@ -19,37 +24,40 @@
             <img class="logo" src="./Imagens/Spider System Transp.png" alt="Spider System">
         </a>
     </header>
-    <div class="login-box">
-        <h2>LOGIN</h2>
-        <form>
-            <div class="user-box">
-                <input type="text" name="" required="">
-                <label>Username</label>
-            </div>
-            <div class="user-box">
-                <input type="password" name="" required="">
-                <label>Senha</label>
-            </div>
-            <div class="esqueceu-senha">
-                <a class="esqueceu-link" href="#">Esqueceu a senha?</a>
-            </div>
-            <div class="botão_login">
-                <a class="botão_enviar" href="#">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    Logar
-                </a>
-                <a class="botão_enviar" href="javascript:history.back();">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    voltar
-                </a>
-            </div>  
-        </form>
-    </div>
+    <div class="container">
+        <div class="login-box">
+            <h2>LOGIN</h2>
+            <form>
+                <div class="user-box">
+                    <input type="text" name="" required="">
+                    <label>Username</label>
+                </div>
+                <div class="user-box">
+                    <input type="password" name="" required="">
+                    <label>Senha</label>
+                </div>
+                <div class="esqueceu-senha">
+                    <a class="esqueceu-link" href="#">Esqueceu a senha?</a>
+                </div>
+                <div class="botão_login">
+                    <a class="botão_enviar" href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Logar
+                    </a>
+                    <a class="botão_enviar" href="javascript:history.back();">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        voltar
+                    </a>
+                </div>  
+            </form>
+        </div>
+        <canvas id="scratch" style="width: 800px; height: 500px;"></canvas>
+    </div>  
 </body>
 </html>

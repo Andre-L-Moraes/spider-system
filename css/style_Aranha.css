@@ -1,0 +1,58 @@
+canvas {
+	display: block;
+	margin: 34px auto;
+	background: var( --cor-fundo-cartao);
+	box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.1);
+	clear: both;
+	
+	/* disable selection of canvas */
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select:none;
+	-ms-user-select:none;
+	-khtml-user-select:none;
+	user-select: none;
+
+	margin-left: 2rem;
+	border-radius: 10px;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+}
+
+#bsa {
+	display: inline-block;
+	width: 150px;
+	padding-top: 30px;
+	font-family: sans-serif;
+}
+
+body .one .bsa_it_ad { background: transparent; border: none; font-family: inherit; padding: 0 15px 0 10px; margin: 0; text-align: left; }
+body .one .bsa_it_ad:hover img { -moz-box-shadow: 0 0 3px #000; -webkit-box-shadow: 0 0 3px #000; box-shadow: 0 0 3px #000; }
+body .one .bsa_it_ad .bsa_it_i { display: block; padding: 0; float: none; margin: 0 0 5px; }
+body .one .bsa_it_ad .bsa_it_i img { padding: 0; border: none; }
+body .one .bsa_it_ad .bsa_it_t { padding: 6px 0; }
+body .one .bsa_it_ad .bsa_it_d { padding: 0; font-size: 10px; color: #333; }
+body .one .bsa_it_p { display: none; }
+body #bsap_aplink, body #bsap_aplink:hover { display: block; font-size: 9px; margin: 12px 15px 0; text-align: right; }
+
+@media (max-width: 1200px) {
+	canvas {
+		display: none;
+	
+	}
+	body {
+		align-items: initial;
+	}
+
+}
+@media (max-width: 1199px) {
+	.container{
+		flex-direction: column;
+		align-items: center;
+	}
+
+}

@@ -190,7 +190,7 @@ input:valid ~ label {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 375px) {
   .login-box {
     padding: 20px; /*margem interna*/
     width: 100%; /*largura*/
