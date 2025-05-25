@@ -1,4 +1,4 @@
-:root{
+:root {
     --cor-botao-vm: #f30511;
     --cor-botao-vm-escuro: #8d0606;
 
@@ -9,36 +9,58 @@
     --cor-texto-claro: #e1f6ff;
 
     --cor-fundo-cartao: #004a6a;
-    --cor-cartão: rgba(0, 0, 0, .5);
+    --cor-cartão: rgba(0, 0, 0, 0.5);
 
-    --sombra-box: 0 15px 25px rgba(0, 0, 0, .6)
+    --sombra-box: 0 15px 25px rgba(0, 0, 0, 0.6);
 }
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-	font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: var(--cor-fundo-az-principal);
+    color: var(--cor-texto-claro);
 }
-.corpo{
+
+.corpo {
     background: var(--cor-fundo-az-principal);
 }
+
 .informacoes {
+    padding: 2rem;
     color: var(--cor-texto-claro);
 }
 
 .sobre {
-	margin: 0 auto; /*margem*/
-    text-align: center; /* texto alinhado*/
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1000px;
 }
 
 .titulo__principal {
-    padding: 2rem; /* margem interna*/
+    padding: 2rem;
 }
 
 .titulo {
-    font-family: 'Kaushan Script', cursive; /*tipo de fonte*/
-    font-size: 25px; /*tamanho da font*/
-    color: var(--cor-texto-claro); /*cor da font*/
-    padding-bottom: 1rem; /*Margem interna para baixo*/
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2rem;
+    color: var(--cor-texto-claro);
+    padding-bottom: 1rem;
 }
 
 .titulo__descricao {
-    padding-top: 1rem; /* margem interna para cima*/
+    padding-top: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.missao {
+    margin-top: 1rem;
+    font-style: italic;
+    font-weight: 400;
+    color: #fff;
 }
