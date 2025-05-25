@@ -5,111 +5,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spider System - sistemas web e criação de sites</title>
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/spider-system/css/reset.css">
-    <link rel="stylesheet" href="/spider-system/css/base.css">
-    <link rel="stylesheet" href="/spider-system/css/cabecalho.css">
-    <link rel="stylesheet" href="/spider-system/css/menu.css">
-    <link rel="stylesheet" href="/spider-system/css/botao_Login.css">
-    <link rel="stylesheet" href="/spider-system/css/rodape.css">
-    
-    <link rel="stylesheet" href="/spider-system/css/rolagem_Inicio.css">
-    <link rel="stylesheet" href="/spider-system/css/Index/main.css">
-    <link rel="stylesheet" href="/spider-system/css/Index/serviço-imagem.css">
-    <link rel="stylesheet" href="/spider-system/css/Index/barbearia.css">
-    <link rel="stylesheet" href="/spider-system/css/Index/barbearia-botão.css">
-    <link rel="stylesheet" href="/spider-system/css/Index/serviço-botão.css">
-    
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/cabecalho.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/botao_Login.css">
+    <link rel="stylesheet" href="./css/rodape.css">
+
+    <link rel="stylesheet" href="./css/rolagem_Inicio.css">
+    <link rel="stylesheet" href="./css/Index/main.css">
+    <link rel="stylesheet" href="./css/Index/serviço-imagem.css">
+    <link rel="stylesheet" href="./css/Index/barbearia.css">
+    <link rel="stylesheet" href="./css/Index/barbearia-botão.css">
+    <link rel="stylesheet" href="./css/Index/serviço-botão.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="corpo">
 
-  <div> <a href="#" id="botao-ao-topo">
-      <i id="icone-seta" class="fa fa-arrow-circle-up"></i>
-    </a>
-  </div>
+    <!-- Âncora no início da página -->
+    <a id="topo"></a>
 
-  <a id="topo"></a>
+    <!-- Botão para voltar ao topo -->
+    <a href="#topo" id="botao-ao-topo" aria-label="Ir ao topo">
+        <i id="icone-seta" class="fa fa-arrow-circle-up"></i>
+    </a>
 
     <header class="cabecalho">
-        <img class="logo" src="/spider-system/Imagens/Spider System Transp.png" alt="Spider System">
+        <img class="logo" src="./Imagens/Spider System Transp.png" alt="Spider System">
         <ul class="menu__lista cf">
-            <li class="menu__item ativo" ><a class="menu__link" href="index.html">Home</a></li>
-            <li class="menu__item" ><a class="menu__link" href="#">Valores</a></li>
-            <li class="menu__item" ><a class="menu__link" href="sites.html">Sites</a>
+            <li class="menu__item ativo"><a class="menu__link" href="index.html">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Valores</a></li>
+            <li class="menu__item"><a class="menu__link" href="sites.html">Sites</a>
                 <ul class="submenu">
-                    <li><a href="/spider-system/doguito/cadastro.html">PETSHOP</a></li>
-                    <li><a href="/spider-system/Barbearia-web.html">BARBEARIA</a></li>
-                    <li><a href="/spider-system/alurinha.html">ALURINHA</a></li>
-                    <li><a href="/spider-system/alura_store.html">ALURA STORE</a></li>
-                    <li><a href="/spider-system/frutas-e-frutos.html">FRUTAS E FRUTOS</a></li>
-                    <li><a href="/spider-system/apeperia.html">APEPERIA</a></li>
+                    <li><a href="./doguito/cadastro.html">PETSHOP</a></li>
+                    <li><a href="Barbearia-web.html">BARBEARIA</a></li>
+                    <li><a href="alurinha.html">ALURINHA</a></li>
+                    <li><a href="alura_store.html">ALURA STORE</a></li>
+                    <li><a href="frutas-e-frutos.html">FRUTAS E FRUTOS</a></li>
+                    <li><a href="apeperia.html">APEPERIA</a></li>
                 </ul>
             </li>
-            <li class="menu__item" ><a class="menu__link" href="sistemas.html">Sistemas</a></li>
-            <li class="menu__item" ><a class="menu__link" href="cadastro.html">Contato</a></li>
+            <li class="menu__item"><a class="menu__link" href="sistemas.html">Sistemas</a></li>
+            <li class="menu__item"><a class="menu__link" href="cadastro.html">Contato</a></li>
             <div class="animation start-home"></div>
         </ul>
-        <div>
-            <li class="menu__item">
-                <a class="botao_login" href="Login.html">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    Login
-                </a>
-            </li>
+        <div class="menu__item">
+            <a class="botao_login" href="Login.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Login
+            </a>
         </div>
     </header>
+
     <main class="informacoes">
         <section class="sobre">
             <div class="titulo__principal">
-                <h1 class="titulo">SISTEMAS WEB PARA PEQUENAS E MEDIAS EMPRESAS</h1>
-            
-                <P class="titulo__descricao">Temos e desemvolvemos sistemas para varios tipos de negocios.</P>
-            
-                <p class="missao"><em>Nossa principal missão é: <strong>"Fornecer o melhor sistema com eficiencia, eficacia como o nosso cliente precisa."</strong></em></p>
-                
-                <h1 class="titulo">CRIAÇÃO DE SITES PARA PEQUENAS E MEDIAS EMPRESAS</h1>
+                <h1 class="titulo">SISTEMAS WEB PARA PEQUENAS E MÉDIAS EMPRESAS</h1>
+                <p class="titulo__descricao">Temos e desenvolvemos sistemas para vários tipos de negócios.</p>
+                <p class="missao">
+                    <em>
+                        Nossa principal missão é:
+                        <strong>"Fornecer o melhor sistema com eficiência e eficácia, como o nosso cliente precisa."</strong>
+                    </em>
+                </p>
 
-                <p class="titulo__descricao">Desemvolvemos sites para sua empresas.</p>
-            
+                <h2 class="titulo">CRIAÇÃO DE SITES PARA PEQUENAS E MÉDIAS EMPRESAS</h2>
+                <p class="titulo__descricao">Desenvolvemos sites para sua empresa.</p>
             </div>
         </section>
+
         <section class="serviços">
             <div class="serviço">
                 <div class="serviço__conteudo">
-                  <div class="serviço__imagem imagem__serviço--site"></div>
-                  <h2 class="serviço__titulo">Criação de sites</h2>
-                  <p class="serviço__descrição">Veja nossos serviços e solicite um orçamento para criação de site para sua empresa.</p>
-                  <a class="serviço__botão" href="sites.html">VEJA OS SITES</a>
-                </div>
-             </div>
-            <div class="serviço">
-                <div class="serviço__conteudo">
-                  <div class="serviço__imagem imagem__serviço--sistema"></div>
-                  <h2 class="serviço__titulo">Nossos Sistemas</h2>
-                  <p class="serviço__descrição">Veja nossos sistemas prontos e solicite um orçamento de um novo sistema.</p>
-                  <a class="serviço__botão" href="#">VEJA OS SISTEMAS</a>
+                    <div class="serviço__imagem imagem__serviço--site"></div>
+                    <h2 class="serviço__titulo">Criação de sites</h2>
+                    <p class="serviço__descrição">Veja nossos serviços e solicite um orçamento para criação de site para sua empresa.</p>
+                    <a class="serviço__botão" href="sites.html">VEJA OS SITES</a>
                 </div>
             </div>
-            <section class="barbearia">
-              <img src="/spider-system/Imagens/utensilios.jpg" alt="utensilios de barbearia" class="barbearia__img">
-              <div class="sobre__barbearia">
+            <div class="serviço">
+                <div class="serviço__conteudo">
+                    <div class="serviço__imagem imagem__serviço--sistema"></div>
+                    <h2 class="serviço__titulo">Nossos Sistemas</h2>
+                    <p class="serviço__descrição">Veja nossos sistemas prontos e solicite um orçamento de um novo sistema.</p>
+                    <a class="serviço__botão" href="#">VEJA OS SISTEMAS</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="barbearia">
+            <img src="./Imagens/utensilios.jpg" alt="Utensílios de barbearia" class="barbearia__img">
+            <div class="sobre__barbearia">
                 <h2 class="barbearia__titulo">SISTEMAS PARA BARBEARIA</h2>
-                <p class="barbearia__descricao">Temos um sistema para a sua barbearia pronto para ser utilizado com facilidade e eficiencia.</p>
+                <p class="barbearia__descricao">Temos um sistema para a sua barbearia pronto para ser utilizado com facilidade e eficiência.</p>
                 <button class="barbearia__botao">Veja o sistema de Barbearia</button>
-              </div>
-            </section>
+            </div>
         </section>
     </main>
+
     <footer class="rodape">
         <p class="copyright">&copy; Spider System - 2022</p>
     </footer>
+
+    <script src="./java/rolagem_Inicio.js"></script>
 </body>
-<script src="/spider-system/java/rolagem_Inicio.js"></script>
 </html>
