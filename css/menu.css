@@ -1,232 +1,169 @@
 .menu__lista {
-	position: relative;
-	width: 540px;
-	height: 50px;
-	background-color: var(--cor-fundo-az-principal);
-	border-radius: 8px;
-	font-size: 0;
-}
-.menu__lista .menu__item {
-	line-height: 50px;
-	height: 100%;
-	font-size: 15px;
-	display: inline-block;
-	position: relative;
-	z-index: 1;
-	text-decoration: none;
-	text-transform: uppercase;
-	text-align: center;
-	color: white;
+    position: relative;
+    width: 540px;
+    height: 50px;
+    background-color: var(--cor-fundo-az-principal);
+    border-radius: 8px;
+    font-size: 0;
+    overflow: hidden;
 }
 
-.menu__lista .animation {
-	position: absolute;
-	height: 100%;
-	top: 0;
-	transition: all .5s ease 0s;
-	border-radius: 8px;
+.menu__item {
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    width: auto;
+    padding: 0 1rem;
+    cursor: pointer;
 }
-/* minhas alterações */
+
+.menu__item:hover {
+    font-family: 'Kaushan Script', cursive;
+}
 
 .menu__item.ativo {
-	background-color: var(--cor-botao-vm);
-	border-radius: 8px;
-	font-weight: bold;
-	font-family: 'Kaushan Script', cursive;	
+    background-color: var(--cor-botao-vm);
+    border-radius: 8px;
+    font-weight: bold;
+    font-family: 'Kaushan Script', cursive;
 }
+
 .menu__item.ativo ~ .animation {
     width: 100%;
     left: 0;
     background-color: var(--cor-fundo-cartao);
 }
 
-/* original*/
-
-.menu__item:nth-child(1) {
-	width: 100px;
-}
-.menu__item:nth-child(2) {
-	width: 110px;
-}
-.menu__item:nth-child(3) {
-	width: 100px;
-}
-.menu__item:nth-child(4) {
-	width: 110px;
-}
-.menu__item:nth-child(5) {
-	width: 120px;
-}
-.menu__lista .start-home, .menu__item:nth-child(1):hover~.animation {
-	width: 100px;
-	left: 0;
-	background-color: var(--cor-botao-vm);
-}
-.menu__lista .start-about, .menu__item:nth-child(2):hover~.animation {
-	width: 110px;
-	left: 100px;
-	background-color: var(--cor-botao-vm);
-}
-.menu__lista .start-blog, .menu__item:nth-child(3):hover~.animation {
-	width: 100px;
-	left: 210px;
-	background-color: var(--cor-botao-vm);
-}
-.menu__lista .start-portefolio, .menu__item:nth-child(4):hover~.animation {
-	width: 110px;
-	left: 310px;
-	background-color: var(--cor-botao-vm);;	
-}
-.menu__lista .start-contact, .menu__item:nth-child(5):hover~.animation {
-	width: 120px;
-	left: 420px;
-	background-color: var(--cor-botao-vm);
-}
-/*Fazer funcionar o submenu*/
-.cf:before,
-.cf:after {
-  content: " ";
-  display: table;
+.menu__lista .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    transition: all 0.5s ease;
+    border-radius: 8px;
+    background-color: var(--cor-botao-vm);
 }
 
-.cf:after {
-  clear: both;
-}
-.menu__link {
-	color: white;
-	text-decoration: none;
-}
-.menu__item:hover{
-    font-family: 'Kaushan Script', cursive;	
-}
+/* Largura por item */
+.menu__item:nth-child(1) { width: 100px; }
+.menu__item:nth-child(2) { width: 110px; }
+.menu__item:nth-child(3) { width: 100px; }
+.menu__item:nth-child(4) { width: 110px; }
+.menu__item:nth-child(5) { width: 120px; }
 
-.menu_li:hover {
-    font-family: 'Kaushan Script', cursive;	
-}
+/* Efeito hover de animação */
+.menu__item:nth-child(1):hover ~ .animation { width: 100px; left: 0; }
+.menu__item:nth-child(2):hover ~ .animation { width: 110px; left: 100px; }
+.menu__item:nth-child(3):hover ~ .animation { width: 100px; left: 210px; }
+.menu__item:nth-child(4):hover ~ .animation { width: 110px; left: 310px; }
+.menu__item:nth-child(5):hover ~ .animation { width: 120px; left: 420px; }
 
-.submenu li:hover {
-    background: #e74c3c;
-	font-family: 'Kaushan Script', cursive;	
-}
-
+/* SUBMENU ESTILO */
 .submenu {
     position: absolute;
     width: 220px;
     left: 50%;
-    margin-left: -100px;
-  }
+    margin-left: -110px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: 999;
+}
 
-  .submenu li {
+.menu__item.ativo:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.submenu li {
     background-color: var(--cor-fundo-cartao);
-    position: relative;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
     overflow: hidden;
-    border-radius: 8px;   
-    font-family: 'Montserrat', sans-serif; 
+    position: relative;
+    margin: 4px 0;
+    list-style: none;
+}
+
+.submenu li:hover {
+    background: #e74c3c;
+    font-family: 'Kaushan Script', cursive;
 }
 
 .submenu > li > a {
+    display: block;
     padding: 1em 2em;
     color: aliceblue;
     text-decoration: none;
-  }
-  
-  .submenu > li::after {
-    content: '';
-    position: absolute;
-    top: -125%;
-    height: 100%;
-    width: 100%;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.9);
-  }
-    /* Odd stuff */
-    .submenu > li:nth-child(odd) {
-        transform: skewX(-25deg) translateX(0);
-      }
-      
-      .submenu > li:nth-child(odd) > a {
-        transform: skewX(25deg);
-      }
-      
-      .submenu > li:nth-child(odd)::after {
-        right: -50%;
-        transform: skewX(-25deg) rotate(3deg);
-      }
-      
-      /* Even stuff */
-      .submenu > li:nth-child(even) {
-        transform: skewX(25deg) translateX(0);
-      }
-      
-      .submenu > li:nth-child(even) > a {
-        transform: skewX(-25deg);
-      }
-      
-      .submenu > li:nth-child(even)::after {
-        left: -50%;
-        transform: skewX(25deg) rotate(3deg);
-      }
-/* Show Submenu */
-  /* Esconda o submenu por padrão */
-  .submenu {
-    opacity: 0;
-    visibility: hidden;
-  }
+}
 
-  /* Mostra o submenu apenas quando o item de menu "Sites" ativo estiver ativo e o mouse passar sobre ele */
-  .menu__item.ativo:hover .submenu {
-    opacity: 1;
-    visibility: visible;
-  }
+/* EFEITOS SKEW */
+.submenu > li:nth-child(odd) {
+    transform: skewX(-25deg);
+}
+.submenu > li:nth-child(odd) > a {
+    transform: skewX(25deg);
+}
+.submenu > li:nth-child(even) {
+    transform: skewX(25deg);
+}
+.submenu > li:nth-child(even) > a {
+    transform: skewX(-25deg);
+}
 
-  .menu__item.ativo:hover .submenu li:nth-child(even) {
-    transform: translateX(15px);
-  }
+/* CLEARFIX */
+.cf::before, .cf::after {
+    content: " ";
+    display: table;
+}
+.cf::after {
+    clear: both;
+}
 
-  .menu__item.ativo:hover .submenu li:nth-child(odd) {
-    transform: translateX(-15px);
-  }
-/* fim do show submenu*/
-
-/* vai aparecer com um clique - o resto do cod. no "menu4.'js'" */
-    /*.submenu {
-      display: none; /* Oculta o submenu por padrão */
-      /* Outras regras de estilo para o submenu *//*
-    }
-    
-    .menu__lista.clicado .submenu {
-      display: block; /* Mostra o submenu quando o menu é clicado *//*
-    }
-/* fim aparecer com um clique*/    
-
-/* fim do submenu*/
-
-
+/* MENU RESPONSIVO */
 @media (max-width: 800px) {
     .menu__lista {
         width: auto;
         height: auto;
         margin: 3%;
-    }
-    .menu__lista {
-        display: block; /* Torna o menu de navegação vertical */
-        text-align: left; /* Alinhe o texto à esquerda */
-    }
-    .menu__lista .menu__item {
-        width: 100%;
-        text-align: center; /* Centralize o texto no menu vertical */
-    }
-    .menu__lista .animation {
-        all: initial; /* Anula todos os estilos */
-    }
-    .submenu {
-        display: none; /* Oculta o submenu por padrão */
-    }
-    .menu__lista{
+        display: block;
+        text-align: center;
         background-color: var(--cor-fundo-cartao);
     }
-}
-/* faz rolagem suave para levar em uma tag da pagina - usado na html sistemas*/
-html {
-  scroll-behavior: smooth;
+
+    .menu__item {
+        display: block;
+        width: 100%;
+        text-align: center;
+        line-height: 50px;
+    }
+
+    .menu__lista .animation {
+        display: none; /* Remove linha de animação no mobile */
+    }
+
+    .submenu {
+        position: static;
+        margin: 0;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+    }
+
+    .submenu li,
+    .submenu li > a {
+        transform: none;
+        width: 100%;
+    }
 }
 
+/* Rolagem suave */
+html {
+    scroll-behavior: smooth;
+}
