@@ -1,6 +1,7 @@
 .sobre_apeperia {
     padding-top: 3rem;
     padding-bottom: 3rem;
+    background-color: var(--azul-claro);
 }
 
 .sobre__titulo {
