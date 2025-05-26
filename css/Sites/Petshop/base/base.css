@@ -8,7 +8,7 @@ body {
 	overflow-x: hidden;
 }
 
-.container { 
+.container_dog { 
 	padding-right: 1rem;
 	padding-left: 1rem;
 }
@@ -27,14 +27,14 @@ body {
 }
 
 @media(min-width: 800px) {
-  .container {
+  .container_dog {
 		padding-right: 2.5rem;
 		padding-left: 2.5rem;	
 	}
 }
 
 @media(min-width: 1200px) {
-	.container {
+	.container_dog {
 		padding-left: calc((100vw - 900px)/2);
 		padding-right: calc((100vw - 900px)/2);
 	}
