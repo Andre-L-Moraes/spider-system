@@ -7,6 +7,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    color: var(--cinza-escuro); /* Adicionando cor explícita para melhorar contraste */
+
 }
 
 .diferenciais__item {
