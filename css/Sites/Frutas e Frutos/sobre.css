@@ -1,5 +1,6 @@
 .sobre {
     text-align: center; /* texto alinhado no centro */
+    background-color: white;
 }
 
 .sobre__titulo {
