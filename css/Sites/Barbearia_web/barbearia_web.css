@@ -1,5 +1,7 @@
 .bodyy {
 	font-family: 'Montserrat', sans-serif;;
+	background-color: #FEFEFE;
+	color: #000000;
 }
 .produtos {
 	width: 940px;
@@ -91,10 +93,9 @@ td, th {
 .titulo-principal {
 	text-align: center;
 	font-size: 2em;
-	margin: 10px 0 1em;
 	clear: left;
 	color: rgba(0, 0, 0, 0.7);
-	padding: 1am 0;
+	padding: 10px 0 1em;
 }
 .utensilios {
 	width: 120px;
@@ -141,10 +142,11 @@ td, th {
 }
 
 .principal {
-	padding: 1am 0;
+	padding: 1em 0;
 	background: #FEFEFE;
 	width: 940px;
 	margin: 0 auto;
+	color: #000000;
 }
 .principal p {
 	margin: 0 0 1em;
