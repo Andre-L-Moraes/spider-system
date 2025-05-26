@@ -1,3 +1,5 @@
+@import url(_variaveis.css);
+
 :root{
     --cor-botao-vm: #f30511;
     --cor-botao-vm-escuro: #8d0606;
