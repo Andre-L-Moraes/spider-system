@@ -6,6 +6,7 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
     background-color: var(--azul-claro);
+    color: var(--cinza-escuro);
 }
 
 .contato__titulo {
