@@ -1,6 +1,7 @@
 .quem-somos {
     text-align: center; /* centralizando o conteudo no centro */
     padding: 5rem; /* espacamento */
+    background-color: white;
 }
 .quem-somos__titulo {
     margin-bottom: 1rem; /* margem para baixo */
