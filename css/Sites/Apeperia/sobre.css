@@ -17,7 +17,7 @@
 
 .sobre__texto {
     line-height: normal;
-
+    color: var(--cinza-escuro);
     margin-bottom: 1rem;
 }
 
