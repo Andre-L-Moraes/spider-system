@@ -27,6 +27,7 @@
 
 .receita__conteudo {
     padding: 1rem; /* espaçamento interno */
+    color: black;
 }
 
 .receita__botao {
