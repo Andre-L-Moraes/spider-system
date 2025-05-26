@@ -1,7 +1,7 @@
 @import url(_reset.css);
 @import url(_variaveis.css);
 
-body {
+.bodyy {
 	background-color: var(--cor-secundaria);
 	color: var(--cor-contraste-escuro);
 	font-family: var(--fonte-familia-corpo);
