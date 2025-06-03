@@ -1,7 +1,7 @@
 function consultarCEP() {
     var cep = document.getElementById("cep").value;
     var varsolicita = new XMLHttpRequest();
-    var url = "http://viacep.com.br/ws/" + cep + "/json/";
+    var url = "https://viacep.com.br/ws/" + cep + "/json/";
 
     // Acessa a API
     varsolicita.open("GET", url, true);
