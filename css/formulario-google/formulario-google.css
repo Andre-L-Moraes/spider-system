@@ -1,0 +1,13 @@
+.container-formulario2 {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    margin: 2em 0; /* Adiciona um pouco de margem acima e abaixo */
+}
+
+/* Se o formulário ficar muito grande em telas pequenas */
+@media (max-width: 768px) {
+    .container-formulario iframe {
+        width: 100%; /* Faz o iframe ocupar 100% da largura em telas menores */
+        height: auto; /* Ajusta a altura automaticamente */
+    }
+}
